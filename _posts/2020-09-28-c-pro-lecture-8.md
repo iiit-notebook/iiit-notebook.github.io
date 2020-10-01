@@ -1,5 +1,5 @@
 ---
-title: Lecture 8
+title: C Pro Lecture 8
 code: cs0.101
 number: 8
 ---
