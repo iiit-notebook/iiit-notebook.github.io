@@ -6,21 +6,21 @@ number: 9
 ## Associativity
 
 Subtraction is left associative in C.
-```C
+```c
 printf("%d", 1 - 2 - 3) // outputs (-4) not 1
 ```
 
 ## Operators and Precedence
 
 C has two types of increment operators, postfix and prefix. Postfix operators perform the increment/decrement after using the value, whereas prefix operators perform the increment/decrement before using the values.
-```C
+```c
 i = 10;
 printf("%d", ++i) // prints 11, i is now equal to 11
 printf("%d", i++) // prints 11, i is now equal to 12
 ```
 
 Note that unary increment operator has greater precedence than the binary multiplication.
-```C
+```c
 int i = 2, j;
 j = i * i++;
 printf("%d %d", i, j); // prints 3, 6

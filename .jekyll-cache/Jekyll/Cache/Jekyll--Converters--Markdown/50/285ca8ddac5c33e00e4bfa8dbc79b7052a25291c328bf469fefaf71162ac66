@@ -1,22 +1,22 @@
-I"è<h2 id="associativity">Associativity</h2>
+I"°<h2 id="associativity">Associativity</h2>
 
 <p>Subtraction is left associative in C.</p>
-<pre><code class="language-C">printf("%d", 1 - 2 - 3) // outputs (-4) not 1
-</code></pre>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">printf</span><span class="p">(</span><span class="s">"%d"</span><span class="p">,</span> <span class="mi">1</span> <span class="o">-</span> <span class="mi">2</span> <span class="o">-</span> <span class="mi">3</span><span class="p">)</span> <span class="c1">// outputs (-4) not 1</span>
+</code></pre></div></div>
 
 <h2 id="operators-and-precedence">Operators and Precedence</h2>
 
 <p>C has two types of increment operators, postfix and prefix. Postfix operators perform the increment/decrement after using the value, whereas prefix operators perform the increment/decrement before using the values.</p>
-<pre><code class="language-C">i = 10;
-printf("%d", ++i) // prints 11, i is now equal to 11
-printf("%d", i++) // prints 11, i is now equal to 12
-</code></pre>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">i</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+<span class="n">printf</span><span class="p">(</span><span class="s">"%d"</span><span class="p">,</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span> <span class="c1">// prints 11, i is now equal to 11</span>
+<span class="n">printf</span><span class="p">(</span><span class="s">"%d"</span><span class="p">,</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="c1">// prints 11, i is now equal to 12</span>
+</code></pre></div></div>
 
 <p>Note that unary increment operator has greater precedence than the binary multiplication.</p>
-<pre><code class="language-C">int i = 2, j;
-j = i * i++;
-printf("%d %d", i, j); // prints 3, 6
-</code></pre>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span> <span class="n">j</span><span class="p">;</span>
+<span class="n">j</span> <span class="o">=</span> <span class="n">i</span> <span class="o">*</span> <span class="n">i</span><span class="o">++</span><span class="p">;</span>
+<span class="n">printf</span><span class="p">(</span><span class="s">"%d %d"</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">);</span> <span class="c1">// prints 3, 6</span>
+</code></pre></div></div>
 
 <p>We can even do multiple assignments in the same expression. We must be very careful when doing this though, since it is not recommended due to how it affects the readability of the code.</p>
 <pre><code class="language-C">int i, j = 1, k;
