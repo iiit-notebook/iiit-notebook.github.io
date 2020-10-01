@@ -7,14 +7,14 @@ number: 5
 
 The standard C libraries have a few very useful functions, such as `printf` and `scanf` present in the headerfile `stdio.h`. We can use them to print to `stdout`, the standard output, and read from `stdin` the standard input.
 
-```C
+```c
 int n = 4;
 printf("There are %d sheep\n", n);
 ```
 In the above line, `printf` takes two arguments, a string literal, and an integer variable. In the string literal, `%d` is a special placeholder that tells the function that we want it to print the integer variable that we 
 have passed along to the function as the next argument over there. We also have an escape sequence `\n`, which tells the function to print the newline character i.e. move to the next line.
 
-```C
+```c
 int n;
 scanf("%d", &n);
 ```
@@ -25,7 +25,7 @@ given address.
 
 A macro is basically a piece of code which has been turned into a shortcut and given a name. Whenever that name is used, it gets replaced by the code we have decided for that macro. There are different types, but we'll keep it simple here.
 
-```C
+```c
 #define PI 3.14
 ...
     radius = 7;

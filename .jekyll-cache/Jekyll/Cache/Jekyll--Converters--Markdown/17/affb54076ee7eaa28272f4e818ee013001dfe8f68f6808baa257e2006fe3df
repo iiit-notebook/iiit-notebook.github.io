@@ -1,18 +1,18 @@
-I"ã<h2 id="more-on-printf">More on printf</h2>
+I"s<h2 id="more-on-printf">More on printf</h2>
 
 <p><code class="language-plaintext highlighter-rouge">printf</code> function also returns a value, in addition to printing its arguments to <code class="language-plaintext highlighter-rouge">stdout</code>. It returns the count of the number of the characters it printed. For example:</p>
 
-<pre><code class="language-C">#include&lt;stdio.h&gt;
-
-int main()
-{
-    int length, n;
-    n = 10;
-    length = printf("n is %d\n", n);
-    printf("We just printed %d characters to the screen\n", length);
-    return 0;
-}
-</code></pre>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include&lt;stdio.h&gt;
+</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="kt">int</span> <span class="n">length</span><span class="p">,</span> <span class="n">n</span><span class="p">;</span>
+    <span class="n">n</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+    <span class="n">length</span> <span class="o">=</span> <span class="n">printf</span><span class="p">(</span><span class="s">"n is %d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">n</span><span class="p">);</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s">"We just printed %d characters to the screen</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">length</span><span class="p">);</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
 <p>The above code prints the following output:</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>n is 10
 We just printed 8 characters to the screen

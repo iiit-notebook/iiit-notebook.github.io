@@ -12,7 +12,7 @@ number: 7
 
 Tokens are (bla bla). The amount of space between tokens usually is not important, as long as they do not get merged together. The compiler ignores excess whitespace.
 However putting a newline character in a string literal is illegal
-```C
+```c
 printf("To C, or not to C:
 that is the question.\n");
 /***WRONG***/
@@ -21,7 +21,7 @@ that is the question.\n");
 ## ASCII and characters
 
 Look at the below code:
-```C
+```c
 #include<stdio.h>
 int main()
 {
@@ -40,7 +40,7 @@ C does allow for *typecasting* to convert between different types, but there are
 Often times we want to print special characters such as double quotes, percent symbols etc. in a string literal, without the C compiler considering it as an individual token, but a part of the string.
 To do this, we have to use escape sequences in the string. We are already familiar with `\n` to signify a newline character, but we also have `\t` for tab, `\"` to print literal double quotes, `\\` to print backslash and so on. If we want to print a percent symbol, we use `%%`. 
 We can even escape literal newlines in our string literals by adding a backslash before pressing `<Enter>`. This can improve readability for very long strings.
-```C
+```c
 printf("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac augue vitae velit lacinia pellentesque non eleifend\
 	 odio. Fusce feugiat scelerisque dolor, vitae maximus enim sodales sit amet. Nulla non auctor velit. Nunc a \
 	dictum felis.");

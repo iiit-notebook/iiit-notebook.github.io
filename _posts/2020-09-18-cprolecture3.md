@@ -4,7 +4,7 @@ code: cs0.101
 number: 3
 ---
 ## Program: Printing a pun
-```C
+```c
     /* pun.c */
     #include<stdio.h>
 
@@ -39,7 +39,7 @@ Before execution, the object file has to be linked to the standard IO library fr
 ## Looking at a simple loop
 
 If we write the following C code:
-```C
+```c
     /* loop.c */
     int main(void) {
         while(1);

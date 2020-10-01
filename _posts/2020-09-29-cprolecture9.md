@@ -27,7 +27,7 @@ printf("%d %d", i, j); // prints 3, 6
 ```
 
 We can even do multiple assignments in the same expression. We must be very careful when doing this though, since it is not recommended due to how it affects the readability of the code.
-```C
+```c
 int i, j = 1, k;
 k = (i = j+1) + 1;
 printf("i = $d, j = $d, k = %d\n", i, j, k); // Outputs i = 2, j = 1, k = 3
@@ -38,7 +38,7 @@ printf("i = $d, j = $d, k = %d\n", i, j, k); // Outputs i = 2, j = 1, k = 3
 In C, zero is treated as false, and any non-zero value is treated as true.
 We can use if statements to make our code run according to certain logical expressions, and run different pieces of code accordingly.
 
- ```C
+ ```c
 if(condition) {
     // some code here
 }
@@ -52,7 +52,7 @@ A convenient datatype for storing these true/false type values is `bool`, define
 `bool = true;` is a valid statement, since the keywords `true` and `false` are defined in the headerfile.
 
 Let us look at an example where there is some ambiguity, known as an dangling-else statement.
-```C
+```c
 #include<stdio.h>
 #include<math.h>
 
@@ -76,7 +76,7 @@ We get no message. This is because the else statement is by default associated w
 We can of course remove this ambiguity by adding curly brackets appropriately to show which else statements belongs where.
 
 
-```C
+```c
 #include<stdio.h>
 #include<math.h>
 

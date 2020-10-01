@@ -21,7 +21,7 @@ It is also often notated as 0x49 or 49H.
 `rand()` is a pseudo-random generator which depends on the seed value, (given by `srand()`). While it's not capable of "true" randomness, we can get pretty unpredictable values if we seed it with the current *time*, since we can't really know exactly when the program will be run.
 
 (insert basic example of `rand()` here)
-```C
+```c
 #include<stdio.h>
 
 #define seed 2000
@@ -40,7 +40,7 @@ main()
 
 This is known as a **linear congruential generator**. It is a type of pseudo random generator. It becomes clear that given the same initial conditions, the function always gives the same "random" sequence, which is why it is known as pseudo-random.
 
-```C
+```c
 #include<stdio.h>
 #include<time.h>
 

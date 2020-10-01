@@ -7,7 +7,7 @@ number: 6
 
 `printf` function also returns a value, in addition to printing its arguments to `stdout`. It returns the count of the number of the characters it printed. For example:
 
-```C
+```c
 #include<stdio.h>
 
 int main()
@@ -30,7 +30,7 @@ We printed 8 characters, because the *newline* character is also counted by `pri
 We also have available other placeholders, or *flags*, for different data types such as `%f` for float, `%e` for scientific notation etc.
 
 Take for example the following code:
-```C
+```c
 #include<stdio.h>
 
 int main()
@@ -56,7 +56,7 @@ i is at address: 0x7ffd582272e4
 We use the `%p` flag here to print the memory address, using the pointer. Notice how though the value of 'i' changed, it's memory address remains the same.
 
 `printf` also gives us the capability to format floats and integers, with left and right justify, rounding and exponential notation, according to our needs.
-```C
+```c
 #include<stdio.h>
 
 int main()
