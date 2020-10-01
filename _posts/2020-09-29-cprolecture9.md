@@ -1,7 +1,7 @@
 ---
-title: Lecture 8
+title: Lecture 9
 code: cs0.101
-number: 8
+number: 9
 ---
 ## Associativity
 
