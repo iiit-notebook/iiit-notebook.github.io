@@ -1,0 +1,4 @@
+- name: Home
+  link: /index.html
+- name: Courses
+  link: /courses.html

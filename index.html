@@ -1,11 +1,13 @@
-<html>
-    <head>
-	<title>IIIT Notebook</title>
-    </head>
-    <body>
-	<h1>This is my IIIT Notebook</h1>
-	<hr>
-	<p>If everything goes as planned, you'll find my notes from different courses and classes here.
-	</p>
-    </body>
-</html
+---
+title: Index
+---
+<h1>Latest Notes</h1>
+
+<ul>
+    {% for post in site.posts %}
+	<li>
+	    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+	    {{ post.excerpt }}
+	</li>
+    {% endfor %}
+</ul>

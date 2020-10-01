@@ -1,0 +1,13 @@
+---
+layout: default
+---
+<p>
+    {% assign course = site.courses | where: 'code', page.code | first%}
+    {% if course %}
+	<a href="{{ course.url }}"><h1>{{ course.code | upcase }} - {{ course.name }}</h1></a>
+    with {{ course.lecturer }}
+    {% endif %}
+    <div class = "date">{{ page.date | date: "%b %d, %Y - %A" }}</div>
+</p>
+
+{{ content }}

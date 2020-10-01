@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<h1>{{ page.code | upcase}} - {{ page.name }}</h1>
+<h2>{{ page.lecturer}}</h2>
+
+{{ content }}
+
+<h2>Notes</h2>
+<ul>
+    {% assign filtered_posts = site.posts | where: 'code', page.code %}
+    {% for post in filtered_posts %}
+	<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+</ul>

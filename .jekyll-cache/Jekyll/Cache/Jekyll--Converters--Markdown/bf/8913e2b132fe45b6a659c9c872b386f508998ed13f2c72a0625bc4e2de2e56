@@ -1,0 +1,77 @@
+I"�<h2 id="more-on-printf">More on printf</h2>
+
+<p><code class="language-plaintext highlighter-rouge">printf</code> function also returns a value, in addition to printing its arguments to <code class="language-plaintext highlighter-rouge">stdout</code>. It returns the count of the number of the characters it printed. For example:</p>
+
+<pre><code class="language-C">#include&lt;stdio.h&gt;
+
+int main()
+{
+    int length, n;
+    n = 10;
+    length = printf("n is %d\n", n);
+    printf("We just printed %d characters to the screen\n", length);
+    return 0;
+}
+</code></pre>
+<p>The above code prints the following output:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>n is 10
+We just printed 8 characters to the screen
+</code></pre></div></div>
+<p>We printed 8 characters, because the <em>newline</em> character is also counted by <code class="language-plaintext highlighter-rouge">printf</code>.</p>
+
+<p><code class="language-plaintext highlighter-rouge">printf</code> also offers greater capacity for us to control the way the output is formatted using placeholders. We already know that in the previous piece of code we used a <code class="language-plaintext highlighter-rouge">%d</code> as a placeholder for an integer. 
+We also have available other placeholders, or <em>flags</em>, for different data types such as <code class="language-plaintext highlighter-rouge">%f</code> for float, <code class="language-plaintext highlighter-rouge">%e</code> for scientific notation etc.</p>
+
+<p>Take for example the following code:</p>
+<pre><code class="language-C">#include&lt;stdio.h&gt;
+
+int main()
+{
+    int i = 100;
+    printf("i = %d\n", i);
+    printf("i is at address: %p\n", &amp;i);
+    
+    i = 2 * 2;
+    printf("i = %d\n", i);
+    printf("i is at address: %p\n", &amp;i);
+    return 0;
+}
+</code></pre>
+
+<p>This gives us the output:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>i = 100
+i is at address: 0x7ffd582272e4
+i = 4
+i is at address: 0x7ffd582272e4
+</code></pre></div></div>
+<p>We use the <code class="language-plaintext highlighter-rouge">%p</code> flag here to print the memory address, using the pointer. Notice how though the value of ‘i’ changed, it’s memory address remains the same.</p>
+
+<p><code class="language-plaintext highlighter-rouge">printf</code> also gives us the capability to format floats and integers, with left and right justify, rounding and exponential notation, according to our needs.</p>
+<pre><code class="language-C">#include&lt;stdio.h&gt;
+
+int main()
+{
+    int x = 17, y = 44992;
+    float m = 39.7772, n = 783530.2;
+    printf("|%5d|%-7d|%10.2f|%.4f\n", x, y, m, n);
+    printf("|%.3d|%8.3d|%g|%10.3e|\n", x, y, m, n);
+    return 0;
+}
+</code></pre>
+
+<p>The above code outputs:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>|   17|44992  |     39.78|783530.1875
+|017|   44992|39.7772| 7.835e+05|
+</code></pre></div></div>
+<p>Now let us carefully take note of how each flag modifies the output. First let as look at the first row printed.
+<code class="language-plaintext highlighter-rouge">%5d</code> tells <code class="language-plaintext highlighter-rouge">printf</code> to print an integer and to use at least 5 characters to print it, so the function prints spaces behind the number to do this, right aligning it in the process.
+<code class="language-plaintext highlighter-rouge">%-7d</code> does essentially the same thing, but it tells the function to print the spaces after the number, left aligning it.
+<code class="language-plaintext highlighter-rouge">%10.2f</code> tells <code class="language-plaintext highlighter-rouge">printf</code> to use 10 characters to print a floating point number, and to only print up to 2 decimal places, note how it rounds the number to the necessary number of decimal places. 
+<code class="language-plaintext highlighter-rouge">%.4f</code> allows us to print 4 decimal places of the number, even though the number doesn’t have 4 decimal places. The expectation is that zeroes would be added, but due to how floating point numbers are implemented and stored in memory, the error means that when we reveal more than what we have assigned, we can often see that the number was not stored exactly as we had entered it.</p>
+
+<p>Now coming to the second row printed.
+<code class="language-plaintext highlighter-rouge">%.3d</code> lets us print 3 digits of the integer, prepending a 0 in this case to make it have 3 digits.
+<code class="language-plaintext highlighter-rouge">%8.3d</code> prints the number so that it occupies 8 spaces and uses at least 3 digits, not a problem here since our integer is larger than that.
+<code class="language-plaintext highlighter-rouge">%g</code> is an interesting flag which prints the shortest representation for the number.
+<code class="language-plaintext highlighter-rouge">%10.3e</code> prints the float in exponential form, taking up 10 characters, and giving at least 3 decimal places.</p>
+:ET
