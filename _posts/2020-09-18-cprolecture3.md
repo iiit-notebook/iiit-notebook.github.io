@@ -1,7 +1,7 @@
 ---
-title: Lecture 2
+title: Lecture 3
 code: cs0.101
-number: 2
+number: 3
 ---
 ## Program: Printing a pun
 ```C
