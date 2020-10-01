@@ -1,11 +1,11 @@
-I"U<h2 id="rectifier">Rectifier</h2>
+I"5<h2 id="rectifier">Rectifier</h2>
 
 <p>Its function is to convert alternate current to direct current.
 What we need is a “current steering block” to take this output with its constantly switching polarity, and put it back out in only one single direction.
 One implementation is to use switches in a diamond configuration, turning them on and off according to our requirement, but implementing this with mechanical switches would be very difficult.
 We can instead use <em>diodes</em>. A diode is a 2-terminal electronic device, which allows current to pass through it when <em>forward-biased</em> and will block the current when <em>reverse-biased</em>. Thus we can construct what is known as a <strong>bridge rectifier</strong>.</p>
 
-<p><img src="/assets/images/ict004fig1.png" alt="bridge rectifier using diodes" /></p>
+<p><img src="/assets/images/ict004fig1.png" alt="block" /></p>
 
 <h2 id="filter">Filter</h2>
 
@@ -32,7 +32,7 @@ Instead, if $f = 50kHz$,
 
 <p>For the purpose of regulating our output to be a constant voltage, we take the assistance of a <strong>zener diode</strong>, a special kind of diode with the amazing property that under reverse bias, it can lock the voltage to a fixed value under ‘zener breakdown’.</p>
 
-<p><img src="/assets/images/ict004fig2.png" alt="Zener diode in place" /></p>
+<p><img src="/assets/images/ict004fig2.png" alt="block" /></p>
 
 <p>We place our zener diode in reverse bias in parallel across our load. We also need a minimum <em>‘knee current’</em> across the zener in order to ensure it behaves as a voltage regulator.
 We used the fact that because of this the voltage across the load is constant and equal to zener voltage, and a simple application of Ohm’s law, to get the useful equations
@@ -40,5 +40,5 @@ We used the fact that because of this the voltage across the load is constant an
 \(I_{S} = (V - V_{Z})(\frac{1}{R_{S}})\)</p>
 
 <h3 id="zener-regulator-design">Zener regulator design</h3>
-<p><img src="004fig3.png" alt="Regulator design" /></p>
+<p><img src="/assets/images/ict004fig3.png" alt="block" /></p>
 :ET

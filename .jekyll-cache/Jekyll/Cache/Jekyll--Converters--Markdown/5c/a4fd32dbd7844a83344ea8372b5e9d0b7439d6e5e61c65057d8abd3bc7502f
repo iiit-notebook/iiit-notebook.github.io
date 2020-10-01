@@ -1,4 +1,4 @@
-I"Ê<h2 id="batteries-and-charging">Batteries and charging</h2>
+I"À<h2 id="batteries-and-charging">Batteries and charging</h2>
 
 <p>All electronic systems (hardware) require DC power to function. Batteries function as portable sources of DC power.
 We can also use a DC <em>power supply</em> instead, which takes in standard AC mains and converts it to a stable DC current.
@@ -15,7 +15,7 @@ Our main topic of discussion will be <strong>battery chargers</strong>.</p>
 <p>The <em>rectifier</em> and <em>filter</em> work to convert DC to AC, and the <em>regulator</em> steadies the output current.
 Battery chargers have an additional block to handle the <a href="https://support.delta-q.com/hc/en-us/articles/360015387312-What-is-an-Algorithm-Charge-Profile-">charge profiles</a>, but we wonâ€™t discuss that in much detail.</p>
 
-<p><img src="/assets/images/ict003fig1.png" alt="Charge Profiles" />
+<p><img src="/assets/images/ict003fig1.png" alt="block" />
 For the most part, the graph says it all.</p>
 
 <h2 id="ac-to-dc-conversion">AC to DC Conversion</h2>

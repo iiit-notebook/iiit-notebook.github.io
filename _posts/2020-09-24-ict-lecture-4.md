@@ -10,7 +10,7 @@ What we need is a "current steering block" to take this output with its constant
 One implementation is to use switches in a diamond configuration, turning them on and off according to our requirement, but implementing this with mechanical switches would be very difficult.
 We can instead use *diodes*. A diode is a 2-terminal electronic device, which allows current to pass through it when *forward-biased* and will block the current when *reverse-biased*. Thus we can construct what is known as a **bridge rectifier**.
 
-![bridge rectifier using diodes](/assets/images/ict004fig1.png)
+![block](/assets/images/ict004fig1.png)
 
 ## Filter
 
@@ -37,7 +37,7 @@ So by increasing the frequency, we greatly decrease the capacitance needed to fi
 
 For the purpose of regulating our output to be a constant voltage, we take the assistance of a **zener diode**, a special kind of diode with the amazing property that under reverse bias, it can lock the voltage to a fixed value under 'zener breakdown'.
 
-![Zener diode in place](/assets/images/ict004fig2.png)
+![block](/assets/images/ict004fig2.png)
 
 We place our zener diode in reverse bias in parallel across our load. We also need a minimum *'knee current'* across the zener in order to ensure it behaves as a voltage regulator.
 We used the fact that because of this the voltage across the load is constant and equal to zener voltage, and a simple application of Ohm's law, to get the useful equations
@@ -45,4 +45,4 @@ $$I_{L} = I_{S} - I_{Z} = V_{Z}(\frac{1}{R_{L}})$$
 $$I_{S} = (V - V_{Z})(\frac{1}{R_{S}})$$
 
 ### Zener regulator design
-![Regulator design](004fig3.png)
+![block](/assets/images/ict004fig3.png)

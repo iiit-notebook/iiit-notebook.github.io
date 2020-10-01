@@ -18,7 +18,7 @@ Both power supplies and chargers have the same basic elements:
 The *rectifier* and *filter* work to convert DC to AC, and the *regulator* steadies the output current.
 Battery chargers have an additional block to handle the [charge profiles](https://support.delta-q.com/hc/en-us/articles/360015387312-What-is-an-Algorithm-Charge-Profile-), but we won't discuss that in much detail.
 
-![Charge Profiles](/assets/images/ict003fig1.png)
+![block](/assets/images/ict003fig1.png)
 For the most part, the graph says it all.
 
 ## AC to DC Conversion

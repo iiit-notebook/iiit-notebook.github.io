@@ -1,10 +1,51 @@
+:root {
+}
+
 body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    width: 65%;
+    margin: auto;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+}
+
+h2 {
+}
+
+code {
+}
+
+nav a {
+   padding: 10px; 
+}
+
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+a:active {
+    text-decoration: underline;
 }
 
 .date {
     float: right;
 }
 
-img {
-    width: 40%;
+img[alt="block"] {
+    display: block;
+    padding: 10px;
+    width: 50%;
+    margin: auto;
 }
+
