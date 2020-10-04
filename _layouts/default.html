@@ -7,6 +7,7 @@
 	{% unless page.is_post %}
 	<link rel="stylesheet" type="text/css" href="/assets/css/no-bullets.css">
 	{% endunless %}
+	<!-- Adding support for MathJax -->
 	<script type="text/x-mathjax-config">
 	      MathJax.Hub.Config({
 	          tex2jax: {
@@ -16,6 +17,9 @@
 	    });
 	</script>
 	<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+	<!-- Adding support for Mermaid -->
+	<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+	<script>mermaid.initialize({startOnLoad:true});</script>
     </head>
     <body>
 	{% include navigation.html %}

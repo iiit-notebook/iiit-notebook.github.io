@@ -1,0 +1,12 @@
+I"Ó<h2 id="mermaid-test">Mermaid test</h2>
+
+<p>Testing out using mermaid by using the javascript cdn include.</p>
+
+<div class="mermaid">
+    graph TD;
+    A--&gt;B;
+    A--&gt;C;
+    B--&gt;D;
+    C--&gt;D;
+</div>
+:ET
