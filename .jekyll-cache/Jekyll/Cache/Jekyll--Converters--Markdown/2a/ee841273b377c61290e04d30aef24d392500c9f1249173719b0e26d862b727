@@ -1,0 +1,8 @@
+I"É<h2 id="testing-mermaid-in-code-blocks">testing mermaid in code blocks</h2>
+
+<pre><code class="language-mermaid">pie title Pets adopted by volunteers
+"Dogs" : 386
+"Cats" : 85
+"Rats" : 35
+</code></pre>
+:ET
