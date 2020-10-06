@@ -1,5 +1,6 @@
 ---
 code: cs0.101
+author: Pratyaksh Gautam
 title: C Pro Lecture 11
 number: 11
 ---

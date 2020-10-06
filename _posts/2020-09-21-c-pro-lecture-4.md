@@ -1,5 +1,6 @@
 ---
 title: C Pro Lecture 4
+author: Pratyaksh Gautam
 code: cs0.101
 number: 4
 ---
