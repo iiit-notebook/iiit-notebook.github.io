@@ -78,6 +78,7 @@ We could've been even stricter about the negative numbers if we wanted to and di
 ```c
 	if(inp < 0)
 	break;
+```
 
 Now we would completely exit the loop if we encountered a negative number and just print the sum up till now.
 We could've printed a warning too if we wanted to.
