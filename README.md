@@ -11,10 +11,12 @@ The site has support for various features to improve note-taking such as
 + LaTeX embedded in `$...$` (inline) and `$$...$$` (display), using MathJax
 
 + Syntax highlighting for code using Rouge, 
-	```language-name
-		insert code here
+<pre>
+```language-name
+	insert code here
 
-	```
+```
+</pre>
 + Graphs written in mermaid-js, simply by writing the code in a `mermaid` code block.
 
 ## Contributing
