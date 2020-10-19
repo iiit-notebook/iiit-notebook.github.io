@@ -6,36 +6,48 @@ body {
     padding: 20px;
     width: 65%;
     margin: auto;
+	background-color: #20242F;
+	color: #ECEFF4;
 }
 
 p {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: serif, Arial, Helvetica, sans-serif;
 }
 
 h1 {
+	color: #ECEFF4;
 }
 
 h2 {
+	color: #5E81AC;
 }
 
 code {
 }
 
 nav a {
-   padding: 10px; 
+	padding: 10px; 
+	color: #ECEFF4;
 }
 
 a:link {
     text-decoration: none;
+	color: #ECEFF4;
 }
+
 a:visited {
     text-decoration: none;
+	color: #ECEFF4;
 }
+
 a:hover {
     text-decoration: underline;
+	color: #ECEFF4;
 }
+
 a:active {
     text-decoration: underline;
+	color: #ECEFF4;
 }
 
 .date {

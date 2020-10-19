@@ -1,9 +1,10 @@
 ---
 code: cs0.101
+author: Pratyaksh Gautam
 title: C Pro Lecture 10
 number: 10
 ---
-### Precedence and expression trees
+## Precedence and expression trees
 
 ```c
 main()

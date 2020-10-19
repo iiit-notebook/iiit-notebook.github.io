@@ -1,5 +1,6 @@
 ---
 title: C Pro Lecture 8
+author: Pratyaksh Gautam
 code: cs0.101
 number: 8
 ---

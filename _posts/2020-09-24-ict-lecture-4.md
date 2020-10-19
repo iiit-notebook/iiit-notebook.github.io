@@ -1,5 +1,6 @@
 ---
 title: ICT Lecture 4
+author: Pratyaksh Gautam
 code: cs0.100
 number: 4
 ---
