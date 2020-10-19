@@ -6,7 +6,7 @@ body {
     padding: 20px;
     width: 65%;
     margin: auto;
-	background-color: #20242F;
+	background-color: #151613;
 	color: #ECEFF4;
 }
 
@@ -15,14 +15,13 @@ p {
 }
 
 h1 {
-	color: #ECEFF4;
 }
 
 h2 {
-	color: #5E81AC;
 }
 
 code {
+	background-color: #272822; 
 }
 
 nav a {
