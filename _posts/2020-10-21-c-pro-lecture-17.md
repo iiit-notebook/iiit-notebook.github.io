@@ -27,8 +27,6 @@ And finally we have a `return` statement, with `main` returning a value of `0` u
 ### Modularity
 
 ```c
-/* Calculates the number of digits in an integer */
-
 #include <stdio.h>
 #include <stdbool.h>
 
