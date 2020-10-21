@@ -8,7 +8,7 @@ number: 17
 ## Functions
 
 Up till now, all our C code has been dealing with a single function, i.e. `main`.
-Functions in general take in some input in the form of *arguments* or *parameters*, run some code, and return some data as a *return value*.
+Functions in general take in some input in the form of **arguments** or **parameters**, run some code, and return some data as a **return value**.
 Functions have obvious value in modularity and abstraction.
 
 ```c
@@ -62,10 +62,11 @@ int main(void)
 }
 ```
 
-In the above code, we have separately defined a function `isDivisor` which gets called when we want to know whether a number is a divisor of another or not.
+In the above code, we have separately defined a function `isDivisor` which gets called when we want to know whether a number is a divisor of another or not.  
 By defining this function separately we get the advantage that we can focus on the different problems one at a time; first we can focus on implementing a method to check the divisor, and then once we have it,
 we write a function for it and after this we can use this function for the purpose of solving our larger problem without having to think about how to check the divisor each time.
-Once we have implemented `isDivisor`, we can treat it as a black box if we want. We only need to care about the input and the output, this is the idea of *abstraction*.
+
+Once we have implemented `isDivisor`, we can treat it as a black box if we want. We only need to care about the input and the output, this is the idea of **abstraction**.
 
 ## backtrace in gdb
 
@@ -76,4 +77,5 @@ gdb has a very useful command that allows you to see the backtrace, or the *func
 #1  0x00005555555551d6 in main () at test.c:23
 ```
 
-The above messages from gdb tells us that the `isDivisor` function is called with the parameters N = 10, and d = 2, and it also tells us that the function was called by `main` at line 23. This information is very helpful in debugging large programs, with nested function calls and various return types all over the place.
+The above messages from gdb tells us that the `isDivisor` function is called with the parameters N = 10, and d = 2, and it also tells us that the function was called by `main` at line 23.  
+This information is very helpful in debugging large programs, with nested function calls and various return types all over the place.
