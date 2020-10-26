@@ -5,14 +5,14 @@ code: cs0.101
 number: 19
 ---
 
-## Storage Layout of a Progra
+## Storage Layout of a Program
 
 ```mermaid
 graph TD
 
 A[Code] --- B[Data Segment]
 B --- C[Heap]
-C --- D
+C --- D[ ]
 D --- E[Stack]
 ```
 
