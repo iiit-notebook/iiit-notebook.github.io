@@ -1,7 +1,7 @@
 ---
 title: C Pro Lecture 20
 author: Pratyaksh Gautam
-code: cs.101
+code: cs0.101
 number: 20
 ---
 
