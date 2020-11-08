@@ -4,6 +4,7 @@ author: Pratyaksh Gautam
 code: cs0.101
 number: 1
 ---
+[The lecture recording](https://youtu.be/YhAt_p76760)
 ## Computing system = Hardware + Software
 
 Every computing system is composed of both hardware and software, for eg: applications (software) running on a smartphone (hardware).

@@ -5,6 +5,7 @@ code: cs0.101
 number: 22
 ---
 
+[The lecture recording](https://youtu.be/gA8wD9qbDpU)
 ## Preprocessor macros: conditionals
 
 We can use conditionals even in the preprocessing stage by using macro conditionals:

@@ -5,6 +5,7 @@ code: cs0.101
 number: 16
 ---
 
+[The lecture recording](https://youtu.be/7A8o0CTjIgs)
 ## Complexity and 'work done'
 
 Processors work at a near constant rate of elementary instructions executed per second. So the time taken by a program to execute is effectively proportional

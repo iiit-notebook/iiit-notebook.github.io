@@ -5,6 +5,7 @@ code: cs0.101
 number: 17
 ---
 
+[The lecture recording](https://youtu.be/icAT6L1J7ag)
 ## Functions
 
 Up till now, all our C code has been dealing with a single function, i.e. `main`.

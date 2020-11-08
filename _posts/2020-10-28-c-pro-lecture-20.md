@@ -5,6 +5,7 @@ code: cs0.101
 number: 20
 ---
 
+[The lecture recording](https://youtu.be/xiulgYYF49c)
 ## The Stack
 
 A **stack** is an important kind of data structure in computer science.

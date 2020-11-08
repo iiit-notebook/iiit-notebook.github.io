@@ -4,6 +4,7 @@ author: Pratyaksh Gautam
 code: cs0.101
 number: 4
 ---
+[The lecture recording](https://youtu.be/ByiFyAm1XkY)
 ## Sequential execution model
 
 In a sequential execution model, statements are executed serially. The fetch-decode-execute cycle runs on a single thread. This is contrasted by *parallel execution model* where tasks are performed on multiple threads with it not being necessary that one task must be finished before the next one starts.

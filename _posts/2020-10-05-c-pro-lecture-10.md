@@ -4,6 +4,7 @@ author: Pratyaksh Gautam
 title: C Pro Lecture 10
 number: 10
 ---
+[The lecture recording](https://youtu.be/SCk59yetECM)
 ## Precedence and expression trees
 
 ```c

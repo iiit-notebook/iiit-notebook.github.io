@@ -5,6 +5,7 @@ title: C Pro Lecture 11
 number: 11
 ---
 
+[The lecture recording](https://youtu.be/X7hmZAJWMlk)
 ## Loops
 
 A `while` loop simply checks the expression passed to it. It executes the code given repeatedly, checking the condition before every loop.

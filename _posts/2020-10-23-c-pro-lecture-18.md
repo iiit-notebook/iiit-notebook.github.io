@@ -4,6 +4,7 @@ author: Vidit Jain
 code: cs0.101
 number: 18
 ---
+[The lecture recording](https://youtu.be/zCiLQ9ePRtc)
 ## Functions _continued_
 We'll take an example of a C program that has 3 functions:
 * The main function 

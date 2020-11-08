@@ -5,6 +5,7 @@ code: cs0.101
 number: 13
 ---
 
+[The lecture recording](https://youtu.be/5iVfce6ARKk)
 ## more on jump statements
 
 In the previous lecture we looked at the `goto` statement in C. These statements are quite straightforward,

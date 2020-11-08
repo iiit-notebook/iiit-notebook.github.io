@@ -4,6 +4,7 @@ author: Pratyaksh Gautam
 code: cs0.101
 number: 7
 ---
+[The lecture recording](https://youtu.be/KR3ATL8rRbE)
 ## Layout of a C program
 
 - Every C program is a collection of .c and .h files.

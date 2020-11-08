@@ -5,6 +5,7 @@ code: cs0.101
 number: 14
 ---
 
+[The lecture recording](https://youtu.be/DXfBUg45cdE)
 ## Arrays
 
 Up till now, most of the variables that we used were standalone *scalar* variables.
