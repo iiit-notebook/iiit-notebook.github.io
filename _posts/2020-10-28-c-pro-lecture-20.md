@@ -84,4 +84,3 @@ This means that if we cal `count()` twice, it will give values `1` and `2`.
 
 Note that scope is enforced by the compiler, which limits the scope of `counter` to the scope of the function `count()`.
 The variable itself is stored in the data section of the program's memory, and it's lifetime is the whole program execution.
-

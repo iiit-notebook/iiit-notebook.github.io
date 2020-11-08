@@ -28,18 +28,18 @@ For AC mains there are two popular standards, 220V/50Hz and 110V/60Hz, in India 
 
 *Why is AC mains a sinusoidally-varying wave?*
 AC Mains varies as a sinusoidal function, essentially because of the way it is commonly generated.
-We use turbines, which are rotated in some form or the other to generate our electricity, often by steam or falling water.  Assuming an ideal case where we are able to rotate the turbines at a constant angular velocity $\omega$
-Then the magnetic flux through the coil which we use in the generator is given by $\phi = nAB\cos{\omega t}$, and by Faraday-Lens' Law, we have the induced potential difference, 
+We use turbines, which are rotated in some form or the other to generate our electricity, often by steam or falling water. Assuming an ideal case where we are able to rotate the turbines at a constant angular velocity $\omega$
+Then the magnetic flux through the coil which we use in the generator is given by $\phi = nAB\cos{\omega t}$, and by Faraday-Lens' Law, we have the induced potential difference,
 $$E = - \frac{d\phi}{dt} = nAB\omega \sin{\omega t}$$
 
-To get DC, we must first *rectify* the sine wave, so that it only has one polarity, and then we must *filter* it to smooth it out into a better, more stable current. These are our two main steps. 
+To get DC, we must first *rectify* the sine wave, so that it only has one polarity, and then we must *filter* it to smooth it out into a better, more stable current. These are our two main steps.
 
 We must also lower the voltage of the current with a *transformer*, since most household appliances run on around ~10V to ~24V. We can conveniently change the transformation ratio by changing the number of coils, since in a transformer
-$$\frac{V_P}{V_S} = \frac{N_P}{N_S}$$
+$$\frac{V_{ P }}{V_{ S }} = \frac{N_{ P }}{N_{ S }}$$
 
-We also have to deal with varying load conditions. When a large current is drawn from a battery, in practical situations its peak voltage is reduced. This is a natural consequence of Ohm's Law when a battery has any internal resistance. We can calculate the terminal potential difference $V_0$ as
-$$V_0 = V_in - IR_in = \frac{R_load}{R_load + R_in}$$
-where $V_in$ is the EMF of the cell.
+We also have to deal with varying load conditions. When a large current is drawn from a battery, in practical situations its peak voltage is reduced. This is a natural consequence of Ohm's Law when a battery has any internal resistance. We can calculate the terminal potential difference $V_{ 0 }$ as
+$$V_{ 0 } = V_{ in } - IR_{ in } = \frac{R_{ load }}{R_{ load } + R_{ in }}$$
+where $V_{ in }$ is the EMF of the cell.
 
 ## Switching Mode Power Supply (SMPS)
 
