@@ -4,6 +4,7 @@ author: Pratyaksh Gautam
 code: cs0.101
 number: 6
 ---
+[The lecture recording](https://youtu.be/a3AwIqBNKqk)
 ## More on printf
 
 `printf` function also returns a value, in addition to printing its arguments to `stdout`. It returns the count of the number of the characters it printed. For example:

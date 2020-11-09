@@ -4,6 +4,7 @@ author: Pratyaksh Gautam
 code: cs0.101
 number: 9
 ---
+[The lecture recording](https://youtu.be/_f8JEuWkMxE)
 ## Associativity
 
 Subtraction is left associative in C.

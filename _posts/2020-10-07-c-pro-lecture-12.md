@@ -4,6 +4,7 @@ author: Pratyaksh Gautam
 code:  cs0.101
 number: 12
 ---
+[The lecture recording](https://youtu.be/3sHAt8Ts-Bo)
 ## Program to find the max integer in a series
 
 ```c

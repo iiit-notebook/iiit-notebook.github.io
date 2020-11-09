@@ -4,6 +4,7 @@ author: Pratyaksh Gautam
 code: cs0.101
 number: 3
 ---
+[The lecture recording](https://youtu.be/Gs_zV1JtXF0)
 ## Program: Printing a pun
 ```c
     /* pun.c */

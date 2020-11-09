@@ -4,6 +4,7 @@ author: Pratyaksh Gautam
 code: cs0.101
 number: 5
 ---
+[The lecture recording](https://youtu.be/1ZcIq5iFfuc)
 ## printf and scanf
 
 The standard C libraries have a few very useful functions, such as `printf` and `scanf` present in the headerfile `stdio.h`. We can use them to print to `stdout`, the standard output, and read from `stdin` the standard input.

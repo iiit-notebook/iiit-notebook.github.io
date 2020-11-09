@@ -4,6 +4,7 @@ author: Pratyaksh Gautam
 code: cs0.101
 number: 8
 ---
+[The lecture recording](https://youtu.be/Qzyh5ycGEwY)
 ## Number Systems
 
 Computers completely encode data in binary, i.e. base 2. For e.g. the character 'A' has the ASCII value of 65, which is stored as (01000001)~2~.

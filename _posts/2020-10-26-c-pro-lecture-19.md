@@ -5,6 +5,7 @@ code: cs0.101
 number: 19
 ---
 
+[The lecture recording](https://youtu.be/UJvI1m1yj0Q)
 ## Storage Layout of a Program
 
 ```mermaid

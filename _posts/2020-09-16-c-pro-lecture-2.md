@@ -4,6 +4,7 @@ author: Pratyaksh Gautam
 code: cs0.101
 number: 2
 ---
+[The lecture recording](https://youtu.be/-4TbZzjYfsY)
 ## The CPU
 
 The central processing unit itself is made up of a few components, namely - 
