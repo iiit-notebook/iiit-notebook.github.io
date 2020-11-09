@@ -103,6 +103,7 @@ The above logic is perfectly valid for unsigned integers, but because of the way
 
 ## A set of function to print the bit representation of a number
 
+### Reading Bits
 ```c
 void readBit(int N, int pos)
 {
@@ -133,6 +134,7 @@ In the return line, we check the value of ``` N & mask ```
 10011010 & 00001000 = 00001000
 ```
 Therefore the resultant is 16, which is non-zero. Hence, the bit as pos=4 is set (equal to 1), So we return 1, else we return 0.
+### Printing Bits
 ```c
 void printBits(int N)
 {
