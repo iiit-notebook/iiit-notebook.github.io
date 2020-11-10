@@ -59,7 +59,7 @@ $$f(x) = \|2 \times x + 1\|$$
 This works:
 ```
 $\frac{a}{b}$
-```  
+```
 This might not:
 ```
 $ \frac{a}{b} $
