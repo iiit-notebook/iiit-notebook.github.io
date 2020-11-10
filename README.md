@@ -1,7 +1,7 @@
 # iiit-notebook
 
 iiit-notebook is a public repository of notes taken by students of IIIT Hyderabad. 
-The website itself is completely static, generated using Jekyll, and made by Pratyaksh Gautam.
+The website itself is completely static, generated using Jekyll.
 
 ## Features
 
@@ -12,9 +12,8 @@ The site has support for various features to improve note-taking such as
 
 + Syntax highlighting for code using Rouge, 
 <pre>
-```language-name
-	insert code here
-
+```c
+	printf("Hello, world!\n");
 ```
 </pre>
 + Graphs written in mermaid-js, simply by writing the code in a `mermaid` code block.
@@ -41,6 +40,30 @@ number: 1
 ```
 
 After that, you can add, commit and push your repo, and then make a PR to merge your changes.
+
+### Compatibility between `pandoc` and `jekyll`
+
+The website itself uses jekyll, but the PDF's rendered by `pandoc` generally look better and are more preferable, however not everything is perfectly compatible between the two, especially in math mode.
+When writing your notes keep the following things in mind:
+
+1. If you need to have pipe symbols (`\|`) or curly brackets (`\{`), not only should you escape them as shown here, but also nest them in a `div`. If you don't do this jekyll (the site) probably won't render it properly.  
+For inline math: `<div>$S = \{a, b\}$</div>`  
+For display math:
+```
+<div>
+$$f(x) = \|2 \times x + 1\|$$
+</div>
+```
+
+2. `pandoc` doesn't take kindly to spacing in between math mode delimiiters.  
+This works:
+```
+$\frac{a}{b}$
+```  
+This might not:
+```
+$ \frac{a}{b} $
+```
 
 ### Courses
 

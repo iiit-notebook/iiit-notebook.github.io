@@ -4,10 +4,11 @@ layout: default
 <p>
     {% assign course = site.courses | where: 'code', page.code | first%}
     {% if course %}
-	<a href="{{ course.url }}"><h1>{{ course.code | upcase }} - {{ course.name }}</h1></a>
+	<h1><a href="{{ course.url }}">{{ course.code | upcase }} - {{ course.name }}</a> | {{page.title}}</h1>
     with {{ course.lecturer }}
     {% endif %}
     <div class = "date">{{ page.date | date: "%b %d, %Y - %A" }}</div>
+	<div>Written by: {{ page.author }}</div>
 </p>
 
 {{ content }}
