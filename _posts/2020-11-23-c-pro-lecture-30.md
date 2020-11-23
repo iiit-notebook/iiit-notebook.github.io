@@ -30,7 +30,8 @@ We will reference the `readNames` call in the next section.
 
 ### the `readNames` function
 
-Our `readNames` function now takes in an *array of char pointers*, the array where we intend to store our names. It's return type is `int`, it returns the number of elements in the list.
+Our `readNames` function now takes in a "third degree pointer", a pointer to a pointer to a char pointer. What this means is that `pnames` contains the address of a pointer, and that pointer points to the base address of a string, with other strings adjecent to it, (and we know strings are just `char *` with null terminators).
+It's return type is `int`, it returns the number of elements in the list.
 ```c
 int readNames(char ***pnames) /* pnames contains a pointer to names (from main) */
 {
@@ -59,10 +60,10 @@ int readNames(char ***pnames) /* pnames contains a pointer to names (from main) 
 }
 ```
 
+`realloc` function allows us to take a pointer which he had previously allocated some memory in the heap, and now make it point to a seperate block of memory in the heap of our desired size.
+
+We called `readNames` in the below line in `main`. We did this because we need to modify `names`, so we must pass a **pointer** to `names`, which we are storing in the function itself as `pnames`
 
 ```c
     nonames = readNames(&names);
 ```
-We called `readNames` in the above line in `main`. We did this because we need to modify `names`, so we must pass a **pointer** to `names`, which we are storing in the function itself as `pnames`
-
-`realloc` function allows us to take a pointer which he had previously allocated some memory in the heap, and now make it point to a seperate block of memory in the heap of our desired size.
