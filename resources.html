@@ -1,0 +1,13 @@
+---
+title: Resources
+---
+<h1> More resources</h1>
+
+<ul>
+	{% for item in site.data.resources %}
+	<a href="{{ item.link }}">
+		<h3>{{ item.name }}</h3>
+		<p>{{ item.description }}</p>
+	</a>
+	{% endfor %}
+</ul>
