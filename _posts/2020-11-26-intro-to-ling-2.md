@@ -27,7 +27,7 @@ Linguistics is not about telling people what is wrong and right in their languag
 
 ### What is language?
 Language is the medium for communication, and is essential for the existence of society. Humans are social beings, and as Noam Chomsky argues:
-> "When we study human language we are approaching what some might call the 'human essence'."
+> "When we study human language we are approaching what some might call the 'human essence'."  
 Humans seem to have some sort of intrinsic understanding of language, without necessarily being able to articulate it into strict rules.
 
 **Sounds** are not random within a language, certain things do not seem to fit into a language:
