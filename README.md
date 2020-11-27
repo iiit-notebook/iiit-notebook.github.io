@@ -55,6 +55,8 @@ $$f(x) = \|2 \times x + 1\|$$
 </div>
 ```
 
+Note: the pipe symbol (`\|`) need not be escaped for display math; however, for inline math, it must be.
+
 2. `pandoc` doesn't take kindly to spacing in between math mode delimiiters.  
 This works:
 ```
