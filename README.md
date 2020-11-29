@@ -55,7 +55,6 @@ $$f(x) = \|2 \times x + 1\|$$
 </div>
 ```
 
-
 2. `pandoc` doesn't take kindly to spacing in between math mode delimiiters.  
 This works:
 ```
