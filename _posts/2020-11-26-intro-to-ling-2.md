@@ -1,5 +1,5 @@
 ---
-title: Intro to Linguistics 2
+title: Intro to Linguistics Lecture 2
 author: Pratyaksh Gautam
 code: cl1.101
 number: 2
