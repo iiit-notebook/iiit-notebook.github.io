@@ -19,8 +19,8 @@ The lack of a negative here makes the sentence seem incorrect, even though we la
 Many languages (notably excluding English) have honorific systems for their pronouns.
 It would be a faux pas to say "tu kab record karegi?" to your teacher (and it may or may not get you in hot water).
 
-### Disambiguation deictic terms
-'deictic' terms are those which have no meaning out of context, and refer to something else.
+### Disambiguating deictic terms
+Deictic (noun form: deixis) terms are those which have only a general meaning out of context, but whose exact intent can only be gathered from context, like "tomorrow" or "there". Even in context, however, they may not always be clear:
 - "Rohan ne apne bete ko thappad maara kyonki **voh** piiyaa hua tha"
 
 The sentence here is ambiguous, who does 'voh' refer to? We might have had a clue to it, if we had referred to 'Rohan' as 'Sharmaji' perhaps we could've been a bit more sure that it was Rohan's son who was drunk, because we did not use "... veh piiye hue the".
