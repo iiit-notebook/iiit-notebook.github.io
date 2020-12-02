@@ -1,8 +1,8 @@
 ---
-title: C Pro Lecture 31
+title: C Pro Lecture 32
 author: Pratyaksh Gautam
 code: cs1.101
-number: 31
+number: 32
 ---
 
 ## Organising larger programs into multiple files
