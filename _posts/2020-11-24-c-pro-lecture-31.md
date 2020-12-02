@@ -11,7 +11,7 @@ These are file descriptors, numbered as 0, 1, 2 respectively in linux. What we n
 
 ## Files and file pointers
 
-In C, we represent files as pointers to memory, `FILE *`. We have two functions very similar to `printf` and `scanf`, which are `frpintf` and `fscanf` respectively.
+In C, we represent files as pointers to memory, `FILE *`. We have two functions very similar to `printf` and `scanf`, which are `fprintf` and `fscanf` respectively.
 
 This allows us to read names from a file without the need for shell input/output redirection.
 ```c

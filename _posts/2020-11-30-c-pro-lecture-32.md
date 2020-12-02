@@ -31,8 +31,8 @@ Now all those cross-references get linked together appropriately. The program ma
 <hr>
 
 When dealing with large projects that have been split and organised into multiple files this way we can face certain issues.
-## Implicit declarations
 
+## Implicit declarations
 
 Consider collaborating on a project with another programmer, where you write some helper functions for them, and they write the higher level code using your helper functions.
 Suppose `helper.c` contains a function `void readParagraph(int *num_lines, char ***lines)`, which reads a paragraph from `stdin` with certain restrictions and modifies `num_lines` to contain the number of lines.
