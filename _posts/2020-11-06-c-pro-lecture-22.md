@@ -96,7 +96,7 @@ We can also shift the bits to the left or the right. Consider the left shift `<<
 
 [ b7 b6 b5 b4 b3 b2 b1 b0 ]
 >>	//shift by one
-[  0 b7 b6 b5 b4 b3 b2 b1 ]	// b7 "falls off"
+[  0 b7 b6 b5 b4 b3 b2 b1 ]	// b0 "falls off"
 ```
 
 The above logic is perfectly valid for unsigned integers, but because of the way that we represent signed integers means that it isn't so clear cut for signed integers.

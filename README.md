@@ -90,3 +90,20 @@ Download the .md file for the lecture you want from the `_posts` directory, for 
 pandoc 2020-09-29-ds-lecture-7.md -o ds-lecture-7.pdf
 ```
 This creates a PDF file of the lecture notes, `ds-lecture-7.pdf`, in the same directory as the downloaded notes.
+
+## TODO
+### Refactoring
+- [ ] Reorganise notes into sub folders
+- [ ] More descriptive file titling
+- [ ] Add contributors
+
+### User interface
+- [ ] Add search
+- [ ] Add tagging - topics covered in lec
+- [ ] Add pagination, "next-prev buttons"
+
+### Aesthetic
+- [ ] Improve front page layout
+- [ ] Improve colorscheme and fonts
+- [ ] Responsive design?
+

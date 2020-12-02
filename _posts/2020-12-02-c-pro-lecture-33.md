@@ -32,3 +32,4 @@ The above Makefile is just a way for us to run the commands we usually run, the 
 The line `mysort: main.o helper.o` tells us that when the target is 'mysort', then execute the lines following it till the next target or end of file, but only if 'mysort' has not been compiled after changes were made.
 
 To understand this better, `main.o` and `helper.o` are dependencies for `mysort`. So `mysort` target is made when these dependencies are "newer" than the target to make.  
+
