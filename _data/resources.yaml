@@ -1,9 +1,19 @@
 - name: Frey's OneDrive
   link: https://iiitaphyd-my.sharepoint.com/:f:/g/personal/freyam_mehta_students_iiit_ac_in/Elqt-7vJgtNNuHEOBFx3tLsBqtl96QTG8OGAsnwWV7LAPQ?e=z5rJQt
   description: A consortium of handwritten notes, lecture slides, quizzes and other relevant files maintained by Freyam Mehta.
+
+- name: iiitprevpapers
+  link: https://github.com/VijayrajS/iiitprevpapers
+  description: \"IIIT Hyderabad Previous Paper Repo\", by @VijayrajS
+
+- name: IIIT Courses Resources
+  link: https://github.com/Groverkss/IIIT-Courses-Resources
+  description: \"Resources related to IIITH courses which we used or learned about too late\", by @Groverkss
+  
 - name: Tanmay's OneDrive
   link: https://iiitaphyd-my.sharepoint.com/:o:/g/personal/tanmay_goyal_students_iiit_ac_in/EmfgB8vWpkxMg1k1-cezFBcBejyjpZt-6uQtDsASFxQrtg?e=OXMCDo
   description: Some DS and RA notes by Tanmay Goyal.
+
 - name: Yash's OneDrive
   link: https://iiitaphyd-my.sharepoint.com/personal/agrawal_yash_students_iiit_ac_in/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fagrawal%5Fyash%5Fstudents%5Fiiit%5Fac%5Fin%2FDocuments%2Fds%20tuts
   description: Contains DS tutorial recordings, on Yash Agrawal's drive.
