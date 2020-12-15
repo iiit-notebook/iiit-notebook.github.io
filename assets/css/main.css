@@ -57,13 +57,31 @@ a:active {
     float: right;
 }
 
-img[alt="block"] {
+img[alt="img-50"] {
     display: block;
     padding: 10px;
     width: 50%;
     margin: auto;
 }
 
+img[alt="img-75"] {
+    display: block;
+    padding: 10px;
+    width: 75%;
+    margin: auto;
+}
+
+img[alt="img-90"] {
+    display: block;
+    padding: 10px;
+    width: 90%;
+    margin: auto;
+}
+
+table {
+	margin-left: auto;
+	margin-right: auto;
+}
 table {
 	margin-left: auto;
 	margin-right: auto;

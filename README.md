@@ -41,6 +41,14 @@ number: 1
 
 After that, you can add, commit and push your repo, and then make a PR to merge your changes.
 
+When using images in your notes, use the alternative text `img-50`, `img-75`,
+or `img-90` in order to have it well formatted and take up 50%, 75%, and 90%
+respectively of the content space. For eg:
+
+```markdown
+![img-90](/assets/images/itl_lec7_img2.png)
+```
+
 ### Compatibility between `pandoc` and `jekyll`
 
 The website itself uses jekyll, but the PDF's rendered by `pandoc` generally look better and are more preferable, however not everything is perfectly compatible between the two, especially in math mode.
