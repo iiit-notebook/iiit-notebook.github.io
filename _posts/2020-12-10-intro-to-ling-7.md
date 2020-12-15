@@ -6,7 +6,9 @@ number: 7
 ---
 
 # The Internation Phonetic Alphabet
-![IPA2005_3000px.png](./itl_lec7_img1.png)
+[Link to the phonetic chart]({{site.base_url}}/assets/images/itl_lec7_img1.png)  
+[Interactive phonetic chart](https://www.ipachart.com/)  
+
 
 **The problem**: how to record sounds that don't exist in your language and you haven't heard before?
 **The solution**: A standard. A chart which corresponds to sounds across languages such that a particular sound, regardless of the language the sound has been used in, will always be represented by a particular member of this chart. IPA is such a chart.
@@ -33,7 +35,7 @@ The IPA uses 3 attributes of a sound to assign it a particular letter:
 
 ### The columns in the IPA table
 
-![Screenshot from 2020-12-15 12-15-02.png](./Screenshot from 2020-12-15 12-15-02.png)
+![](/assets/images/itl_lec7_img2.png)
 
 For the most part, the tongue would obstruct the sounds, till the palate, the tip of the tongue will touch the place of articulation. towards the velum and uvula, the back of the tongue is more involved. After that, the tongue isn't involved and air flow is controlled by the pharynx or the glottis.
 The columns refer to the attribute: *place of articulation*:
