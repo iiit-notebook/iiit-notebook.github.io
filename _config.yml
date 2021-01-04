@@ -1,4 +1,5 @@
 name: IIIT Notebook
+permalink: /:title:output_ext
 collections:
     courses:
       output: true
