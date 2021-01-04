@@ -35,7 +35,7 @@ If you touch somewhere around the Adam's apple then a vibration will be felt in 
 
 ### The columns in the IPA table
 
-![img-90](/assets/images/itl_lec7_img2.png)
+![img-75](/assets/images/itl_lec7_img2.png)
 
 For the most part, the tongue would obstruct the sounds, till the palate, the tip of the tongue will touch the place of articulation. towards the velum and uvula, the back of the tongue is more involved. After that, the tongue isn't involved and air flow is controlled by the pharynx or the glottis.
 

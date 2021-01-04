@@ -10,7 +10,7 @@ A **phone** is a minimal unit of sound, which can be phonetically atomised into 
  A **phoneme** on the other hand is a 'psychological reality'. They represent the perceived organisation of the actual phones by a listener.
 
 Phones are absolute and untied to a language. Phonemes however are distinct only with reference to a language. For e.g. consider the phones [p] and [ph]:  
-In English, the aspiration does not distinguish these two as phonemes in the language, since pen [phen] (with aspiration) and pen [pen] (without aspiration) are examples of two equivalent pronunciations for the word.  
+In English, the aspiration does not distinguish these two as phonemes in the language, since pen [phen] *(with aspiration)* and pen [pen] *(without aspiration)* are examples of two equivalent pronunciations for the word.  
 However, in Hindi, the presence of this aspiration can change the meaning of the word, for example 'पल' [pəl] and 'फल' [phəl].
 This means that in Hindi, [p] and [ph] are two distinct phonemes.
 
