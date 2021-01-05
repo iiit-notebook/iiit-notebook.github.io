@@ -3,6 +3,8 @@ permalink: /:title:output_ext
 collections:
     courses:
       output: true
+    notes:
+      output: true
 
 markdown: kramdown
 kramdown:
@@ -16,10 +18,10 @@ defaults:
       layout: "course"
   - scope:
       path: ""
-      type: "posts"
+      type: "notes"
     values:
-      layout: "post"
-      is_post: true
+      layout: "notes"
+      is_notes: true
   - scope:
       path: ""
     values:

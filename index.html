@@ -12,9 +12,9 @@ You can find more resources <a href='/resources.html'>here.</a>
 <h2>Latest Notes</h2>
 
 <ul>
-    {% for post in site.posts %}
+    {% for note in site.notes %}
 	<li>
-	    <h2><a href="{{ post.url }}">{{ post.code | upcase }} - {{ post.title }}</a></h2>
+	    <h2><a href="{{ note.url }}">{{ note.code | upcase }} - {{ note.title }}</a></h2>
 	</li>
     {% endfor %}
 </ul>

@@ -1,0 +1,50 @@
+---
+date: 2020-12-01
+title: DS Lecture 32
+author: Abhinav S Menon
+code: ma5.101
+number: 32
+---
+
+## Polynomials over Rings
+#### Theorem.
+A polynomial $p(x)$ is irreducible over a field $K$ iff $kp(x)$ is also irreducible over $K$, where $k \in K$.  
+**Proof.** We will prove both directions.  
+(i) $p(x)$ is irreducible over $K \Rightarrow kp(x)$ is irreducible over $K$.  
+Suppose $kp(x)$ is reducible in $K$, *i.e.*, $kp(x) = f(x)\cdot g(x)$ for some $f,g \in \mathcal{P}^n_{K}$ [the set of all polynomials of degree $< n$ over $K$]. This implies that $p(x) = (k^{-1}f(x))\cdot g(x)$, since $k^{-1} \in K$.  
+This means that $p(x)$ is reducible, which is a contradiction. Hence $kp(x)$ is irreducible over $K$.  
+(ii) $kp(x)$ is irreducible over $K \Rightarrow p(x)$ is irreducible over $K$.  
+Suppose $p(x)$ is reducible in $K$, *i.e.*, $p(x) = f(x)\cdot g(x)$ for some $f,g \in \mathcal{P}^n_{K}$. This implies that $kp(x) = (kf(x))\cdot g(x)$, since $k \in K$.  
+This means that $kp(x)$ is reducible, which is a contradiction. Hence $p(x)$ is irreducible over $K$.  
+
+**Note.** The set of all polynomials of degree $<n$ over a Galois field $GF(p)$ is denoted as $GF(p^n)$, and is called an *extended Galois field*.
+
+## Polynomial Division
+Just like integers, polynomials over a ring can also be divided, and Euclid's Division Lemma applies to them as well. *i.e.*, given any two polynomials $g(x), r(x) \in K[X]$, there exist unique $q(x), r(x) \in K[X]$ such that
+<div>
+$$
+g(x) = q(x)f(x) + r(x),
+$$
+</div>
+and $0 \leq$ deg $r <$ deg $g$. Given this, we can apply Euclid's Algorithm and Euclid's Extended Algorithm to polynomials over $K$, and thus find their greatest common divisors and inverses.
+
+### Euclid's Algorithm
+Euclid's Algorithm for polynomials is exactly analogous to Euclid's Algorithm for integers:  
+gcd$(a(x),b(x))$  
+1. $A(x) = a(x)$, $B = b(x)$  
+2. if $(B(x) == 0)$ then return A(x)  
+3. $R(x) = A(x)$ mod $B(x)$  
+4. $A(x) = B(x)$, $B(x) = R(x)$  
+5. return gcd$(A(x),B(x))$
+
+### Euclid's Extended Algorithm
+Again, Euclid's Extended Algorithm for polynomials is exactly analogous to Euclid's Extended Algorithm for integers:  
+inverse$(a(x),b(x))$  
+1. $A_1(x) = 1, A_2(x) = 0, A_3(x) = b(x)$ and $B_1(x) = 0, B_2(x) = 1, B_3(x) = a(x)$  
+2. if $(B_3(x) == 0)$ then return error  
+3. if $(B_3(x) == 1)$ then return $B_2(x)$  
+4. $Q(x) = \lfloor\frac{A_3(x)}{B_3(x)}\rfloor$  
+5. $R_1(x) = A_1(x) - Q(x)B_1(x), R_2(x) = A_2(x) - Q(x)B_2(x), R_3(x) = A_3(x) - Q(x)B_3(x)$  
+6. $A_1(x) = B_1(x), A_2(x) = B_2(x), A_3(x) = B_3(x)$  
+7. $B_1(x) = R_1(x), B_2(x) = R_2(x), B_3(x) = R_3(x)$  
+8. return inverse($A_3(x),B_3(x)$)  

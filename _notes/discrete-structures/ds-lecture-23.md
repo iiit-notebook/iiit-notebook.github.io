@@ -1,0 +1,75 @@
+---
+date: 2020-11-07
+title: DS Lecture 23
+author: Abhinav S Menon
+code: ma5.101
+number: 23
+---
+
+## Definitions
+1. **Idempotence** (elements)**.** Let $\langle S, \cdot \rangle$ be a structure. An element $x \in S$ is said to be *idempotent* if $x \cdot x = x^{2} = x$.
+
+2. **Subgroups.** If $\langle S, \cdot \rangle$ is a group, then any subset $T \subseteq S$ such that  $\langle T, \cdot \rangle$ is also a group is called a subgroup.
+
+Note: Frequently, the same letter is used to represent an algebraic system as well as its associated set.
+
+## Miscellaneous Theorems
+#### Theorem 1.
+A finite monoid $M = \langle S, \cdot \rangle$, is a group iff its identity element $e \in S$ is its only idempotent.
+
+**Proof.** We know that a monoid already satisfies closure, associativity, and existence of identity. For it to be a group, only the existence of inverse needs to be proved.
+
+(i) $M$ is a group $\Rightarrow e \in S$ is the only idempotent.
+
+Suppose $\exists x \in S$ such that $x^{2} = x$ and $x \neq e$. Since $M$ is a group, $x$ has an inverse $x^{-1}$. Premultiplying by this $x^{-1}$, we see that $x^{-1} \cdot x^{2} = x^{-1} \cdot x \Rightarrow (x^{-1} \cdot x) \cdot x = e \Rightarrow x = e$, which is a contradiction. Therefore $e$ is the only idempotent.
+
+(ii) $e \in S$ is the only idempotent $\Rightarrow M$ is a group.
+
+Consider an element $x \neq e$ in $S$ that has no inverse. We will arrive at a contradiction, thus proving that all elements have an inverse and that $M$ is a group.
+
+Consider the set $X$ defined as
+<div> $$ X = \{ x^{n} | n \in \mathbb{N}\}.  $$ </div>
+Since $x$ is not idempotent, not all elements of $X$ are equal to $x$.
+
+Now, by closure, $X \subseteq S$. Hence, by PHP, $x^m = x^n$ for some $m,n$ (where $m \neq n$). Suppose $m > n$; then $x^n \cdot x^{m-n} = x^n$. Substituting $x^n$ with $x^m$ in this implies that $x^m \cdot x^{m-n} = x^{2m-n} = x^n$. The exponent of the LHS, therefore, can be increased repeatedly.
+
+Hence, we can assume that $m - 2n \geq 0$ (if not, we can replace $m$ with $p = 2m - n$ or $3m - n$ and so on, till we have an inequality that works).  
+Then, we can multiply $x^m = x^n$ on both sides by $(m-2n)$, which shows that $x^{2m-2n} = x^{m-n}$, *i.e.* $x^{m-n}$ is idempotent. But $e$ is the only idempotent, so $x^{m-n} = e$.
+
+Say $m-n = k$. Then $x^k = x^{k-1} \cdot x = x \cdot x^{k-1} = e$. However, this means that $x^{k-1} = x^{-1}$, contradicting the fact that $x$ has no inverse. Therefore, all $x \in S$ have inverses, and $M$ is a group, QED.
+
+#### Theorem 2.
+If $H$ is a subgroup of $G$, then the identity of $H$ is the same as the identity of $G$.
+
+**Proof.** Let the identities of $H$ and $G$ be $e_{H}$ and $e_{G}$ respectively. Consider $h \in H$. By definition of $e_{H}$ and $e_{G}$, $h \cdot e_{H} = h \cdot e_{G}$ [since $h \in H \subseteq G$].
+Premultiplying by $h^{-1}$, we see that $e_{H} = e_{G}$.
+
+#### Theorem 3.
+If $H$ is a subset of $G$, it is a subgroup iff $h_{1} \cdot h_{2}^{-1} \in H$, $\forall h_{1},h_{2} \in H$.
+
+**Proof.** We will prove the group axioms for $H$ using the given property, and the given property using the group axioms.
+
+(i) $h_{1} \cdot h_{2}^{-1} \in H$, $\forall h_{1},h_{2} \in H \Rightarrow H$ is a subgroup of $G$.
+
+$H$ is associative since $G$ is. We will prove existence of identity and inverse and closure.
+
+Firstly, $H$ must include $e$. We see that it does by setting $h_{2} = h_{1} = h$ in $h_{1} \cdot h_{2}^{-1} \in H$.
+
+Next, $h^{-1}$ must be in $H$, $\forall h \in H$. To see this, let $h_{2} = h$ and $h_{1} = e$ in $h_{1} \cdot h_{2}^{-1} \in H$, giving $e \cdot h^{-1} = h^{-1} \in H$.
+
+Then, $a \cdot b \in H$, $\forall a, b \in H$. Letting $h_{1} = a$ and $h_{2} = b^{-1}$, we see that $a \cdot b = a \cdot (b^{-1})^{-1} = h_{1} \cdot h_{2}^{-1} \in H$.
+
+Thus, $H$ is a group under $\cdot$, and therefore a subgroup of $G$.
+
+(ii) $H$ is a subgroup of $G \Rightarrow h_{1} \cdot h_{2}^{-1} \in H$, $\forall h_{1},h_{2} \in H$.
+
+Since $H$ is a subgroup, it is closed and all $h \in H$ have inverses. If $h_{2} \in H$, then $h_{2}^{-1} \in H$ also. Hence, if $h_{1} \in H$, then $h_{1} \cdot h_{2}^{-1} \in H$ by closure. This completes the proof.
+
+#### Theorem 4.
+If $H$ is a closed, finite subset of $G$, then it is a subgroup of $G$.
+
+**Proof.** Since $H$ is a subset of $G$, it satisfies associativity, and it is given to be closed. First, we will show that the identity is in H, and then, that all elements of $H$ have inverses in $H$.
+
+By closure, all of $h, h^{2}, h^{3},...,h^{n},...$ belong to $H$. Hence, by PHP, $h^{i} = h^{j}$ for some $i > j$. Since $h \in G$, it can be cancelled; hence $h^{i-j} = e$.
+
+Let $i-j = k$; then $h^{-1} = h^{k-1} \in H$. Thus, the theorem is proved.
