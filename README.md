@@ -101,7 +101,7 @@ This creates a PDF file of the lecture notes, `ds-lecture-7.pdf`, in the same di
 
 ## TODO
 ### Refactoring
-- [ ] Reorganise notes into sub folders
+- [X] Reorganise notes into sub folders
 - [ ] More descriptive file titling
 - [ ] Add contributors
 
