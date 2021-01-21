@@ -2,7 +2,7 @@
 title: Intro to linguistics lecture 17
 author: Shashwat Singh
 code: cl1.101
-number: 17
+number: 18
 ---
 
 # Morphology
