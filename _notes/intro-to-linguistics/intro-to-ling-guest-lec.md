@@ -19,22 +19,22 @@ For the sentence:
 **Phrase Structure Tree**  
 ```mermaid
 graph TD
-    S -- NP_1
-    S -- VP_1
-    NP_1 -- N_a
-    N_a -- Hari
-    VP_1 -- V
-    V -- eats
-    VP_1 -- NP_2a
-    VP_1 -- NP_2b
-    NP_2a -- det_b
-    NP_2a -- N_b
-    det_b -- two
-    N_b -- bananas
-    NP_2b -- det_c
-    NP_2b -- N_c
-    det_c -- every
-    N_c -- morning
+    S --> NP_1
+    S --> VP_1
+    NP_1 --> N_a
+    N_a --> Hari
+    VP_1 --> V
+    V --> eats
+    VP_1 --> NP_2a
+    VP_1 --> NP_2b
+    NP_2a --> det_b
+    NP_2a --> N_b
+    det_b --> two
+    N_b --> bananas
+    NP_2b --> det_c
+    NP_2b --> N_c
+    det_c --> every
+    N_c --> morning
 ```
 
 In contrast, we have another way of looking at the sentence and the relations between the words in it known as **Dependency Grammar**  
