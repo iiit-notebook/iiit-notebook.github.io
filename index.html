@@ -3,18 +3,18 @@ title: Index
 ---
 <h1>iiit-notebook</h1>
 <p>
-iiit-notebook is a public repository of notes taken by students of IIIT Hyderabad.
-Find the README at the <a href='https://github.com/iiit-notebook/iiit-notebook.github.io'>github repository (click here).</a>
+a public repository of notes taken by students of IIIT Hyderabad.
 </p>
-<p>
-You can find more resources <a href='/resources.html'>here.</a>
-</p>
-<h2>Latest Notes</h2>
-
 <ul>
-    {% for post in site.posts %}
-	<li>
-	    <h2><a href="{{ post.url }}">{{ post.code | upcase }} - {{ post.title }}</a></h2>
+	{% for course in site.courses %}
+	<li class = "front-box">
+		<a href = "{{ course.url }}"><h2>{{ course.name }}</h2></a>
+		{% assign filtered_notes = site.notes | where: 'code', course.code | sort: date | reverse %}
+		<ul>
+			{% for note in filtered_notes limit:3 %}
+			<li> <a href  ="{{ note.url }}">{{ note.title }}</a> </li>
+			{% endfor %}
+		</ul>
 	</li>
-    {% endfor %}
+	{% endfor %}
 </ul>

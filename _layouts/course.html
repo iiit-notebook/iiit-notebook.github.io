@@ -8,8 +8,8 @@ layout: default
 
 <h2>Notes</h2>
 <ul>
-    {% assign filtered_posts = site.posts | where: 'code', page.code %}
-    {% for post in filtered_posts %}
-	<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% assign filtered_notes = site.notes | where: 'code', page.code %}
+    {% for note in filtered_notes %}
+	<li><a href="{{ note.url }}">{{ note.title }}</a></li>
     {% endfor %}
 </ul>

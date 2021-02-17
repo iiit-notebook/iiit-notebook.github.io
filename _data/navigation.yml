@@ -2,5 +2,7 @@
   link: /index.html
 - name: Courses
   link: /courses.html
-- name: More
+- name: More Resources
   link: /resources.html
+- name: README/Repo
+  link: https://github.com/iiit-notebook/iiit-notebook.github.io

@@ -26,19 +26,19 @@ git clone https://github.com/<your-username>/iiit-notebook.github.io
 cd iiit-notebook.github.io
 ```
 
-The notes themselves are located in the `_posts/` directory and follow the standard Jekyll naming format, `yyyy-mm-dd-title`
-for eg: `_posts/2020-09-14-c-pro-lecture-1.md`
+The notes themselves are located in the `_notes/` directory.
+for eg: `_notes/c-pro-lecture-1.md`
 
 Write your notes in markdown format, with the following front matter for Jekyll at the start of the document. This is some example front matter, edit it accordingly.
 ```
 ---
+date: 2020-09-14
 title: C Pro Lecture 1
 author: Pratyaksh Gautam
 code: cs0.101
 number: 1
 ---
 ```
-
 After that, you can add, commit and push your repo, and then make a PR to merge your changes.
 
 When using images in your notes, use the alternative text `img-50`, `img-75`,
@@ -95,14 +95,14 @@ Use the pandoc mermaid filter if you wish to have the graphs rendered as well.
 
 Download the .md file for the lecture you want from the `_posts` directory, for eg `2020-09-29-ds-lecture-7.md`.
 ```
-pandoc 2020-09-29-ds-lecture-7.md -o ds-lecture-7.pdf
+pandoc ds-lecture-7.md -o ds-lecture-7.pdf
 ```
 This creates a PDF file of the lecture notes, `ds-lecture-7.pdf`, in the same directory as the downloaded notes.
 
 ## TODO
 ### Refactoring
-- [ ] Reorganise notes into sub folders
-- [ ] More descriptive file titling
+- [X] Reorganise notes into sub folders
+- [X] More descriptive file titling
 - [ ] Add contributors
 
 ### User interface
@@ -111,7 +111,6 @@ This creates a PDF file of the lecture notes, `ds-lecture-7.pdf`, in the same di
 - [ ] Add pagination, "next-prev buttons"
 
 ### Aesthetic
-- [ ] Improve front page layout
+- [X] Improve front page layout
 - [ ] Improve colorscheme and fonts
 - [ ] Responsive design?
-
