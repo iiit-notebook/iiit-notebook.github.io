@@ -49,6 +49,18 @@ respectively of the content space. For eg:
 ![img-90](/assets/images/itl_lec7_img2.png)
 ```
 
+### Resources
+
+You can add any important resources and other sites to the site simply by making a new entry in `_data/resources.yaml`
+See for example the following entry:
+```yaml
+- name: Frey's OneDrive
+  link: https://iiitaphyd-my.sharepoint.com/:f:/g/personal/freyam_mehta_students_iiit_ac_in/Elqt-7vJgtNNuHEOBFx3tLsBqtl96QTG8OGAsnwWV7LAPQ?e=z5rJQt
+  description: A consortium of handwritten notes, lecture slides, quizzes and other relevant files maintained by Freyam Mehta.
+```
+
+The resources will now show up nicely formatted in the 'Resources' tab.
+
 ### Compatibility between `pandoc` and `jekyll`
 
 The website itself uses jekyll, but the PDF's rendered by `pandoc` generally look better and are more preferable, however not everything is perfectly compatible between the two, especially in math mode.
