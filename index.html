@@ -6,7 +6,8 @@ title: Index
 a public repository of notes taken by students of IIIT Hyderabad.
 </p>
 <ul>
-	{% for course in site.courses %}
+	{% assign active_courses = site.courses | where: 'active', 'true' %}
+	{% for course in active_courses %}
 	<li class = "front-box">
 		<a href = "{{ course.url }}"><h2>{{ course.name }}</h2></a>
 		{% assign filtered_notes = site.notes | where: 'code', course.code | sort: date | reverse %}
