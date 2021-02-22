@@ -3,6 +3,7 @@ title: DSM Lecture 1
 code: ec2.101
 author: Pratyaksh Gautam
 date: 2020-02-19
+number: 1
 ---
 ## Revising Number Systems
 We use base 10 (decimal) number system in day to day life, it *feels* the most natural to us as a result, but we could have just as well used any other base as well.
