@@ -2,6 +2,7 @@
 title: DSA Lecture 1
 date: 2020-02-19
 number: 1
+code: cs1.201
 author: Pratyaksh Gautam
 ---
 
