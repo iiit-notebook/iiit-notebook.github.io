@@ -14,4 +14,8 @@ Introductory course on linear algebra.
 - "Introduction to Linear Algebra", Strang
 - "Linear Algebra Done Wrong", Treil
 
-
+## Grading Policy
+- **Weekend quizzes**: 25%
+- **Regular quizzes** (conducted centrally): 25%
+- **Assignments**: 25%
+- **Endterm exam**: 25%
