@@ -46,7 +46,7 @@ $(-a_1  a_r^{-1}) \cdot \bar\alpha_1 + (-a_2  a_r^{-1}) \cdot \bar\alpha_2 + …
 **The second part**:
 This is trivial because if there exists such an $\bar\alpha_r$ then the set $\{\bar\alpha_1, \bar\alpha_2 .. \bar\alpha_r\}$ is linearly dependent and the super set of any linearly dependent set is itself linearly dependent.
 
-*Note to the reader: the professor here goes into a mini discussion about why $r$'s range goes from $2$ to $k$ and why it can't be $r$. I have chucked that entire discussion because the theorem talks about _preceding vectors_ in the set and there is nothing preceding $\bar\alpha_1$ and therefore $r$ can't be $1$. Prof's discussion on this matter, in my humble opinion, introduces a bit more confusion and an assumption than necessary.*
+*Note to the reader: the professor here goes into a mini discussion about why $r$'s range goes from $2$ to $k$ and why it can't be $1$. I haven't included that entire discussion because the theorem talks about _preceding vectors_ in the set and there is nothing preceding $\bar\alpha_1$ and therefore $r$ can't be $1$.*
 
 Also note that we're strictly concerned with a finite set.
 
@@ -110,6 +110,65 @@ Note: A vector space may have more than one basis.
 
 _Note: number of elements of all bases are equal (proof pending)_  
 (Prof. left this as an exercise to the reader and I haven't gotten around to it, lol )
+To prove that note, I first need to introduce another theorem:  
+
+__Theorem__  
+If $V$ has a basis with $n$ elements then every set of vectors in $V$ which has more than $n$ elements is linearly dependent  
+__Proof__  
+consider $B = \{v_1, v_2, … v_n\}$ to be a basis (with $n$ elements)  
+consider a set $W = \{w_1, w_2, … w_k\}$ and $k > m$  
+
+To prove that $W$ is linearly dependent we need to prove that the equation  
+
+$$
+x_1 \cdot w_1 + x_2 \cdot w_2 + .. + x_k \cdot w_k = 0
+$$  
+
+has a solution in which not all $x_i$ are $0$.   
+
+
+since $B$ is a basis, then it is an independent set that spans the whole vector space $V$ and therefore we can represent any vector as a _unique_ linear combination of all the vectors in $B$.   
+
+This leads us to:  
+
+$$
+w_1 = a_{11} \cdot v_1 + a_{12} \cdot v_2 + ... + a_{1n} \cdot v_n \\
+w_2 = a_{21} \cdot v_1 + a_{22} \cdot v_2 + ... + a_{2n} \cdot v_n \\
+.     . \\
+.. \\
+.. \\
+w_k = a_{k1} \cdot v_1 + a_{k2} \cdot v_2 + ... + a_{kn} \cdot v_n
+$$
+
+where $a_{ij} \in F$   
+
+this allows us to rewrite $x_1 \cdot w_1 + x_2 \cdot w_2 + .. + x_k \cdot w_k = 0$ as   
+
+$$
+x_1(a_{11} \cdot v_1 + a_{12} \cdot v_2 + ... + a_{1n} \cdot v_n) + x_2(a_{21} \cdot v_1 + a_{22} \cdot v_2 + ... + a_{2n} \cdot v_n) + .. + x_k(a_{k1} \cdot v_1 + a_{k2} \cdot v_2 + ... + a_{kn} \cdot v_n) = 0 \\
+
+\Rightarrow (a_{11}x_1 + a_{21}x_2 + ... + a_{k1}x_k) \cdot v_1 + ... + (a_{1n}x_1 + a_{21}x_2 + ... + a_{kn}x_k) \cdot v_n = 0
+$$
+
+as the $B$ is independent, the only way the final version of the equation works is if all the coefficients have to be $0$.   
+
+$$
+a_{11}x_1 + a_{21}x_2 + ... + a_{k1}x_k = 0 \\
+.. \\
+.. \\
+
+a_{1n}x_1 + a_{21}x_2 + ... + a_{kn}x_k = 0
+
+$$
+
+these are $n$ homogenous  equations with $k$ variables (all the $x_i$)  with more variables than equations (as $n < k$), thus we know that there need to be infinitely many solutions, in which there has to be a solution in which not all $x_i$ are $0$ 
+Hence proved that $W$ is dependent   
+
+__Now, to prove that all bases have the same number of elements__  
+Let there exist two bases $B$ and $W$, such that $B$ has $m$ elements and $W$ has $n$ elements and $m \not = n$. Without loss of generality, I assume that $n > m$ .
+Since, they're bases we know that they're linearly independent sets. 
+As per the last theorem, we know that any set with more elements than a basis has to be _linearly independent_ this is a contradiction to our original assumption that both $B$ and $W$ are bases. 
+Hence proved by contradiction that $m=n$ and consequently that all bases have the same number of elements.  
 
 
 **Question**: Show that the vectors $(1, 1, 1, 1), (0, 1, 1, 1), (0, 0, 1, 1), \text{and } (0, 0, 0, 1)$ form a basis of $\mathbb{R^4(R)}$.
