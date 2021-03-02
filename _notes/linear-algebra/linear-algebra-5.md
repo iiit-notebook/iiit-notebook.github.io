@@ -9,7 +9,7 @@ number: 5
 
 **Theorem**:
 The set of non-zero vectors $\{\bar\alpha_1\, \bar\alpha_2\ … \bar\alpha_k\}$ is linearly dependent,
-if and only if there exists an $\bar\alpha_r, 2 \geq r \geq k$, such that it is the linear combination of preceeding vectors.
+if and only if there exists an $\bar\alpha_r, 2 \leq r \leq k$, such that it is the linear combination of preceeding vectors.
 
 **Proof**:  
 *Note: this proof is taken primarily from the book "Finite-Dimensional Vector Space by P.R. Halmos"
@@ -20,7 +20,7 @@ it's the same proof, just a different way of looking at it. I am more comfortabl
 - $\{\bar\alpha_1\, \bar\alpha_2\ … \bar\alpha_k\}$ is linearly dependent
 then there is an $\bar\alpha_r$ which can be represented as a linear combination of the vectors before it.  
 - If there exists an $\bar\alpha_r$ such that it is a linear combination of all the vectors before it,
-then the set $\{\bar\alpha_1\, \bar\alpha_2\ .… \bar\alpha_k\}$ is  linearly independent.
+then the set $\{\bar\alpha_1\, \bar\alpha_2\ .… \bar\alpha_k\}$ is linearly dependent.
 
 Let $W = \{\bar\alpha_1\, \bar\alpha_2\ .… \bar\alpha_r....  \bar\alpha_k\}$  
 
