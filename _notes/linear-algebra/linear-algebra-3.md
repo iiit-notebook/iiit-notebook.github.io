@@ -7,8 +7,8 @@ number: 3
 ---
 ## Vector Subspaces
 
-Let $(V, \cross)$ be a vector space over the field $(F, +, \cdot)$.  
-Now, if $(W, \cross)$ ... is a sub
+Let $(V, \times)$ be a vector space over the field $(F, +, \cdot)$.  
+Now, if $(W, \times)$ ... is a sub
 
 #### **Theorem**
 A non empty subset $W$ of $V$ is a subspace of V $iff$:  
@@ -25,7 +25,7 @@ Commutative property and associative property are hereditary properties, and thu
 
 Now, since $F$ is a field, $1 \in F \Rightarrow -1 \in F$  
 If $\alpha \in W$, then we have $(-1) \times \alpha \in W$ (since $W$ is close wrt scalar multiplication.)  
-So, $- \alpha in W$.  
+So, $- \alpha \in W$.  
 
 Now, since we know that $W$ is closed wrt vector addition:
 $$\alpha + (- \alpha) = \phi \in W$$
