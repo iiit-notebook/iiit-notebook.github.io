@@ -42,7 +42,7 @@ The intersection of any two subspaces of a vector space, is also a subspace.
 
 #### **Proof**
 Let $W_1, W_2$ be two subspaces of the vector space $V$.  
-Then $W_1 \Cap W_2$ is a non e
+Then $W_1 \Cap W_2$ is non empty.
 
 #### **Theorem**
 The union of any two subspaces of a vector space, is also a subsspace, $iff$ one subspace is a subset of the other.
