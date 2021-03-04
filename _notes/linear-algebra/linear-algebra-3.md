@@ -53,7 +53,7 @@ Trivial proof.
 
 *Backward implication*:
 
-Assume that there is such a union of two vector subspaces, such that neither is the subset of the other, and the union itself id a vector subspace.
+Assume that there is such a union of two vector subspaces, such that neither is the subset of the other, and the union itself is a vector subspace.
 
 Now if neither is the subset of the other, there must be some element that belongs to *only* the second subspace, but not the first,
 and similiarly another element that belonges to the first of the subspaces but not the second.
