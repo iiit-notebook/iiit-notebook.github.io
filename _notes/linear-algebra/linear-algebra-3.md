@@ -42,7 +42,7 @@ The intersection of any two subspaces of a vector space, is also a subspace.
 
 #### **Proof**
 Let $W_1, W_2$ be two subspaces of the vector space $V$.  
-Then $W_1 \Cap W_2$ is a non e
+Then $W_1 \Cap W_2$ is non empty.
 
 #### **Theorem**
 The union of any two subspaces of a vector space, is also a subsspace, $iff$ one subspace is a subset of the other.
@@ -53,7 +53,7 @@ Trivial proof.
 
 *Backward implication*:
 
-Assume that there is such a union of two vector subspaces, such that neither is the subset of the other, and the union itself id a vector subspace.
+Assume that there is such a union of two vector subspaces, such that neither is the subset of the other, and the union itself is a vector subspace.
 
 Now if neither is the subset of the other, there must be some element that belongs to *only* the second subspace, but not the first,
 and similiarly another element that belonges to the first of the subspaces but not the second.
