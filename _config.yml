@@ -21,7 +21,7 @@ defaults:
       type: "notes"
     values:
       layout: "notes"
-      is_notes: true
+      is_note: true
   - scope:
       path: ""
     values:
