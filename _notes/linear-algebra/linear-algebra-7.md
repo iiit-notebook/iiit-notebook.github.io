@@ -16,9 +16,63 @@ where $\alpha, \beta \in U$, $c \in F$.
 
 **Theorem**:
 If $U$ and $V$ are linear spaces on the same field then $f: U \rightarrow V$ is a linear mapping if and only if  
-$$f(a \alpha + b \beta) = a f(\alpha) + b f(\beta)$$
+$$f(a \cdot \bar\alpha + b \cdot \bar\beta) = a f(\bar\alpha) + b f(\bar\beta)$$
 
 **Proof**:
+This is an if and only statement, therefore the proof has two parts, for vector spaces $U$ and $V$ and $\bar\alpha, \bar\beta \in U$ and $a, b \in F$:
+1. $f:U \rightarrow V$ is a linear mapping $\Rightarrow$ $f(a\cdot \bar\alpha + b \bar\beta) = a \cdot f(\bar\alpha) + b \cdot f(\bar\beta)$
+2. $f(a\cdot \bar\alpha + b \bar\beta) = a \cdot f(\bar\alpha) + b \cdot f(\bar\beta)$ $\Rightarrow$ $f: U \rightarrow B$ is a linear mapping.
+
+__The first part:__  
+Given that $f: U \rightarrow V$ is a linear mapping, we get two stipulations:
+1. $f(\bar\alpha + \bar\beta) = f(\bar\alpha) + f(\bar\beta)$ for arbitrary $\bar\alpha, \bar\beta \in U$ 
+2. $f(c \cdot \bar\alpha) = c \cdot f(\bar\alpha)$ for $c \in F$ and $\bar\alpha \in U$   
+
+
+Now, let us consider $f(a \cdot \bar\alpha + b \cdot \bar\beta)$, by closure of scalar multiplication we know that $a \cdot \bar\alpha, b \cdot\bar\beta \in U$ thus by the first stipulation we can say
+$$
+f(a \cdot \bar\alpha + b \cdot \bar\beta) = f(a \cdot \bar\alpha) + f(b \cdot \bar\beta) \\
+$$
+
+and using the second stipulation we get (for each term on the right):
+
+$$
+f(a \cdot \bar\alpha) + f(b \cdot \bar\beta)  = a \cdot f(\bar\alpha) + b \cdot f(\bar \beta)
+$$
+
+Hence
+$$
+f(a \cdot \bar\alpha + b \cdot \bar\beta) = a \cdot f(\bar\alpha) + b \cdot f(\bar\beta)
+$$
+  
+
+__The second part:__  
+Given that  
+
+$$
+f(a \cdot \bar\alpha + b \cdot \bar\beta) = a \cdot f(\bar\alpha) + b \cdot f(\bar\beta)
+$$ 
+
+for arbitrary vectors in $U$ and arbitrary scalars in $F$   
+since $1 \in F$ we let $a = b = 1$, after making that substitution we get
+$$
+f(\bar\alpha + \bar\beta) = f(\bar\alpha) + f(\bar \beta)
+$$
+
+for arbitrary vectors in $U$, this is the _first stipulation required for a linear transformation_.
+
+since $0 \in F$, we let $b = 0$, after making this substitution in the given statement, we have
+
+$$
+f(a \cdot \bar\alpha) = a \cdot f(\bar\alpha)
+$$
+
+for abitrary vectors in $U$ and arbitrary scalars in $F$. We have obtained the _second stipulation of a linear transformation_
+
+Having obtained the two required stipulations for linear transformation, we claim that $f$ is a linear transformation. Hence proved.
+
+
+
 
 **Theorem**: If there is a set of linearly dependent vectors in $U$, then the set of the images of the elements of that set in $V$ will also be linearly dependent.
 
