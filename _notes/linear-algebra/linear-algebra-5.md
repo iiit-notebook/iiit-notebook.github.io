@@ -109,7 +109,7 @@ Note: A vector space is _finite dimensional_ if it has a finite basis.
 Note: A vector space may have more than one basis.
 
 _Note: number of elements of all bases are equal (proof pending)_  
-(Prof. left this as an exercise to the reader and I haven't gotten around to it, lol )
+
 To prove that note, I first need to introduce another theorem:  
 
 __Theorem__  
