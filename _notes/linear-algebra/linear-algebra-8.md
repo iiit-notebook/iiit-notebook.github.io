@@ -8,13 +8,71 @@ number: 8
 ## Linear Mapping
 
 **Theorem**: Let $$\{ x_1, x_2 ..., x_n\}$$ be a basis for a finite dimensional vector space $V(F)$ and $$\{ y_1, y_2 ..., y_n\}$$ be an arbitrary set of vectors in $W(F)$.
-Then there exists a linear mapping from the $V$ to $W$.
+Then there exists a unique linear mapping from the $V$ to $W$ such that
+$f(x_1) = y_1, f(x_2) = y_2 … f(x_n) = y_n$ 
 
 **Proof**:  
+__proof that $f$ is a linear mapping__
 Let $x \in V$, then $x = a_1 x_1 + a_2 x_2 + ... + a_n x_n$, where $a_i \in F$.
 
-Then we define our function as
+Then we define our function $f: V \rightarrow W$ such that
+$$
+f(\bar x) = a_1 \cdot \bar y_1 + a_2 \cdot \bar y_2 + ... + a_n \cdot \bar y_n
+$$
+Note: since $a_1 .. a_n$ are _unique_ for a given $\bar x$, we can say that the function is well defined. 
 
+Now we can write an $x_i \in \{x_1, x_2, .. x_n\}$ as $x_i = 0 \cdot x_1 + … + a_i \cdot x_i + ...$ and thus
+$$
+f(x_i) = 0 \cdot y_1 + ... + a_i \cdot y_i + ... + 0 \cdot y_n
+$$
+and so on.
+consider another vector $\bar \beta \in V$ such that:   
+
+$\bar \beta = b_1 \cdot x_1 + b_2 \cdot x_2 + .… + b_n \cdot \bar x_n$
+
+thus, by definition of the function, we have:
+
+$$
+f(\bar\beta) = b_1 \cdot y_1 + b_2 \cdot y_2 + ... + b_n \cdot y_n
+$$
+
+now, consider $\bar x + \bar\beta = (a_1 + b_1) \cdot x_1 + … + (a_n + b_n) \cdot x_n$ 
+and accordingg to the definition of the function we have:  
+
+$$
+f(\bar x + \bar\beta) = (a_1 + b_1) \cdot y_1 + ... + (a_n + b_n) \cdot y_n \\
+\Rightarrow f(\bar x + \bar\beta) = a_1 \cdot y_1 + ... + a_n \cdot y_n + b_1 \cdot y_1 + ... + b_n \cdot y_n \\
+\Rightarrow f(\bar x + \bar\beta) = f(\bar x) + f(\bar \beta) \\
+\text{.......... i}
+$$
+
+This is the first required stipulation for a linear mapping.
+
+Now, consider an arbitrary $a \in F$ and consider an arbitrary $\bar x \in V$ i.e. $\bar x = a_1 \cdot x_1 + … + a_n \cdot x_n$.  
+now $a \cdot \bar x = a a_1 \cdot x_1 + … + a a_n \cdot x_n$  
+which is $a \cdot \bar x = (a a_1) \cdot x_1 + … + (a a_n) \cdot x_n$
+now, by definition of the function, we have
+$f(a \cdot \bar x) = (a a_1) \cdot y_1 + … + (a a_n) \cdot y_n$
+and by distribution, we have
+
+$$
+f(a \cdot \bar x) = a(a_1 \cdot y_1 + ... + a_n \cdot y_n) \\
+\Rightarrow f(a \cdot \bar x) = a \cdot f(\bar x)
+$$ 
+
+This is the second required stipulation of a linear mapping.
+Thus $f$ is indeed a linear mapping. 
+
+__proof that $f$ is unique (given that it is a linear mapping)__:
+Now suppose we had another linear mapping $g$ such that $g(x_1) = y_1, g(x_2) = y_2 … g(x_n) = y_n$ 
+let $\bar x \in V$ thus $\bar x = a_1 \cdot x_1 + … + a_n \cdot x_n$ thus 
+ 
+$$
+g(\bar x) = a_1 \cdot g(x_1) + ... + a_n \cdot g(x_n) \text{ due to linearity } \\
+\Rightarrow g(\bar x) = a_1 \cdot y_1 + ... + a_n \cdot y_n
+$$ 
+
+which is exactly for $f$ was, thus $f=g$ and thus $f$ has to be unique.
 
 ## Kernel and Image of Linear Map
 __Definition:__ Let $f:U \rightarrow W$ be a linear mapping from a vector space $U(F)$ to a vector space $W(F)$.
