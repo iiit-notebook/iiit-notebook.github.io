@@ -33,8 +33,8 @@ Thus, now we can say
 $a_1\cdot \bar\alpha_1 + ... + a_r \cdot \bar\alpha_r = 0 \ \ ... (i)$  
 such that _not all_ $a_1, … a_r$ are 0
 
-Note that $a_r$ _cannot_ be $0$ because that would imply that the set $\{\bar\alpha_1, \bar\alpha_2 … \bar\alpha_{r-1}\}$ is linearly independent,
-which it can't be by our definition of the $r$.
+Note that $a_r$ _cannot_ be $0$ because that would imply that the set $\{\bar\alpha_1, \bar\alpha_2 … \bar\alpha_{r-1}\}$ is linearly dependent,
+which it can't be by our definition of the $r$ (we assumed that $\bar\alpha_r$ is the first element such that everything before it and including it gives us a linearly dependent set).
 Thus we can re-write $(i)$
 
 $- a_1\cdot \bar\alpha_1 - .... - a_{r-1}\bar\alpha_{r-1}  = a_r \cdot \bar\alpha_r$
