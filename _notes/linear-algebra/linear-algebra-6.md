@@ -56,7 +56,7 @@ Finally, this means that $V$ must be a direct sum of the vector subspaces $W_1$ 
 
 **Theorem**: **(Steinitz Replacement Theorem)**  
 If $$\{ \bar\alpha_1, \bar\alpha_2, ..., \bar\alpha_n \}$$ is a basis of $V(F)$ and $\bar\beta$ is a non zero vector belonging to V, then $\bar\beta = \sum_{i = 1}^{n} c_i \bar\alpha_i$,
-where $c_i \in F$ and all $c_i$'s are non-zero.
+where $c_i \in F$ and not all $c_i$'s are zero.
 If $c_j \neq 0$, then $$\{ \bar\alpha_1, \bar\alpha_2,..., \bar\alpha_{j-1}, \bar\beta, \bar\alpha_{j+1}, ..., \bar\alpha_n \}$$] is a basis of $V(F)$ 
 
 **Proof**:
