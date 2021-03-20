@@ -16,21 +16,21 @@ We note that solving a system of linear equations is almost trivial if
     (i) there is some equation containing only one variable, and
     (ii) each equation consists of all the variables of another one, plus one more.  
 For example, to solve the system
-<div>
+
 $$x + y + z = 9,$$
 $$3y - 4z = 4,$$
 $$5z = 10,$$
-</div>
+
 we need only find $z = 2$ from the last equation, and substitute it into the second equation to directly obtain $y = 3$, and similarly find $x = 4$. This process is called back-substitution.  
 The rest of the lecture is concerned with reducing any given system of equations to this form – this is called Gaussian Elimination. We begin by defining two helpful matrices.
 
 ## Coefficient Matrix and Augmented Matrix
 The coefficient matrix of a system of linear equations is simply the matrix whose rows consist of lists of coefficients of each equation. For example, consider the system  
-<div>
+
 $$x + y + z = 9,$$
 $$2x - 4y + z = -4,$$
 $$x - y = -1.$$
-</div>
+
 The coefficient matrix for this system is $$\begin{bmatrix} 1 & 1 & 1 \\ 2 & -4 & 1 \\ 1 & -1 & 0 \end{bmatrix}.$$  
 The augmented matrix just has another column to the right for the constant terms, *i.e.*, $$\begin{bmatrix} 1 & 1 & 1 & 9 \\ 2 & -4 & 1 & -4 \\ 1 & -1 & 0 & -1 \end{bmatrix}.$$  
 
@@ -50,24 +50,24 @@ Let us now formally define what form we would like the system to be in.
 A matrix is said to be in *row echelon form* if  
     (a) any zero rows are at the bottom, and  
     (b) in each row, the first nonzero element is to the left of the first nonzero element in the row immediately below.  
-We can see that the augmented matrix of the system in the previous section, that is <div>$$\begin{bmatrix} 1 & 1 & 1 & \\ 0 & 3 & -4 & 4 \\ 0 & 0 & 5 & 10 \end{bmatrix}$$</div> is in this form.  
+We can see that the augmented matrix of the system in the previous section, that is $$\begin{bmatrix} 1 & 1 & 1 & \\ 0 & 3 & -4 & 4 \\ 0 & 0 & 5 & 10 \end{bmatrix}$$ is in this form.  
 In general, once we convert the matrix to row echelon form, we change it back to a system of equations and solve it by back-substitution. _Row echelon form is not unique_.   
 
-This is the form that we will reduce the augmented matrices to, using the above listed operations (called elementary row operations). We will now try to do this for the matrix in the beginning of the section, <div>$$\begin{bmatrix} 1 & 1 & 1 & 9 \\ 2 & -4 & 1 & -4 \\ 1 & -1 & 0 & -1 \end{bmatrix}.$$</div>  
+This is the form that we will reduce the augmented matrices to, using the above listed operations (called elementary row operations). We will now try to do this for the matrix in the beginning of the section, $$\begin{bmatrix} 1 & 1 & 1 & 9 \\ 2 & -4 & 1 & -4 \\ 1 & -1 & 0 & -1 \end{bmatrix}.$$  
 
-First, we will try to make the first entries of the second and third rows zero. We can do this with the transformations $R_2 \to R_2 - 2R_1$ and $R_3 \to R_3 - R_1$. Thus, we get the matrix <div>$$\begin{bmatrix} 1 & 1 & 1 & 9 \\ 0 & -6 & -1 & -22 \\ 0 & -2 & -1 & -10 \end{bmatrix}.$$</div>  
+First, we will try to make the first entries of the second and third rows zero. We can do this with the transformations $R_2 \to R_2 - 2R_1$ and $R_3 \to R_3 - R_1$. Thus, we get the matrix $$\begin{bmatrix} 1 & 1 & 1 & 9 \\ 0 & -6 & -1 & -22 \\ 0 & -2 & -1 & -10 \end{bmatrix}.$$  
 
 Now, the first nonzero entry in the third row should be to the right of $-6$ in the second row, for it to be in row echelon form. We can achieve this by subtracting $\frac{1}{3}$ of $R_2$ from $R_3$ (note that this will not affect the position of the zeroes because $0 - \frac{1}{3} \cdot 0 = 0 - 0 = 0$. This is why we are not using $R_1$ in this step; it would mess up the zeroes on the left).  
-However, to avoid screwing around with fractions and negative numbers too much, we can multiply $R_3$ by $-3$ first. This gives us <div>$$\begin{bmatrix} 1 & 1 & 1 & 9 \\ 0 & -6 & -1 & -22 \\ 0 & 6 & 3 & 30 \end{bmatrix}.$$</div>  
+However, to avoid screwing around with fractions and negative numbers too much, we can multiply $R_3$ by $-3$ first. This gives us $$\begin{bmatrix} 1 & 1 & 1 & 9 \\ 0 & -6 & -1 & -22 \\ 0 & 6 & 3 & 30 \end{bmatrix}.$$  
 
-Now we simply add $R_3 \to R_3 + R_2$ to make its second entry zero: <div>$$\begin{bmatrix} 1 & 1 & 1 & 9 \\ 0 & -6 & -1 & -22 \\ 0 & 0 & 2 & 8 \end{bmatrix}.$$</div>
+Now we simply add $R_3 \to R_3 + R_2$ to make its second entry zero: $$\begin{bmatrix} 1 & 1 & 1 & 9 \\ 0 & -6 & -1 & -22 \\ 0 & 0 & 2 & 8 \end{bmatrix}.$$
 
 This is a row echelon form of the given matrix. The corresponding linear equations are
-<div>
+
 $$x + y + z = 9,$$
 $$-6y - z = -22,$$
 $$2z = 8.$$
-</div>
+
 
 We solve these using back-substitution to obtain the solution $x = 2, y = 3, z = 4$.  
 
