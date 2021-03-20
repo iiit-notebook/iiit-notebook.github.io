@@ -145,7 +145,7 @@ An inner product over a vector space $V(\mathbb{R})$ is an operation that assign
 (i) $(u,v) = (v,u)$  
 (ii) $(u,v+w) = (u,v) + (u,w)$  
 (iii) $(cu,v) = c(u,v)$  
-(iv) $(u,v) \geq 0$ and $(u,u) = 0 \iff u = 0$.  
+(iv) $(u,u) \geq 0$ and $(u,u) = 0 \iff u = 0$.  
 
 *Note: Strictly, this is the definition of the inner product restricted to the special case of vector spaces over the real numbers. A general definition exists for arbitrary vector spaces; this will be taught in the next class.*
 
