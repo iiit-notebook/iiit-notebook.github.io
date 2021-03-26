@@ -28,11 +28,11 @@ We assume that $A \cdot X = 0$ has the unique trivial solution.
 Therefore, if we try to to Gauss-Jordan elimination, we should arrive at the reduced echelon form such that the augmented matrix will look like this: 
 $[A | 0]$ 
 
-$= \left[\begin{array}{cccc|c} a_{11} & a_{12} & . & . & 0 \\  . & . & . & . & 0   \\ . & . & . & . & . \\ a_{n1} & a_{n2} & . & . & 0 \end{array}\right]$ 
+$$= \left[\begin{array}{cccc|c} a_{11} & a_{12} & . & . & 0 \\  . & . & . & . & 0   \\ . & . & . & . & . \\ a_{n1} & a_{n2} & . & . & 0 \end{array}\right]$$ 
 
 and since we know this is solvable and has trivial solution, we can say that we should be able to, after row operations, represent it as this 
 
-$\left[\begin{array}{cccc|c} 1 & 0 & . & . & 0 \\  . & . & . & . & 0   \\ . & . & . & . & . \\ 0 & 0 & . & 1 & 0 \end{array}\right]$
+$$\left[\begin{array}{cccc|c} 1 & 0 & . & . & 0 \\  . & . & . & . & 0   \\ . & . & . & . & . \\ 0 & 0 & . & 1 & 0 \end{array}\right]$$
 
 because we know $x_1 = x_2 = x_3. .. x_n = 0$ 
 as you can see the left side of the augmented matrix is $I_n$. Since we could get to to the augmented matrix using row operations alone, we can get from $A$ to $I_n$ using row operations alone, thus $I_n$ is the reduced echelon form of $A$.
