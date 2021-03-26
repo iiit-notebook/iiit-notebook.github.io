@@ -1,5 +1,5 @@
 ---
-title: Linear Algebra lecture 7
+title: Linear Algebra Lecture 7
 date: 2021-03-04
 author: Pratyaksh Gautam, Shashwat Singh
 code: ma2.101
