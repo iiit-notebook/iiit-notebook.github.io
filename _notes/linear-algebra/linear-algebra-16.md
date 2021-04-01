@@ -1,6 +1,6 @@
 ---
 title: Linear Algebra Lecture 16
-date: 2021-03-23
+date: 2021-03-30
 author: Pratyaksh Gautam
 code: ma2.101
 number: 16
