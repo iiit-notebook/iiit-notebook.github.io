@@ -41,7 +41,7 @@ we have this additional element $v$, so the transformation cannot be one-one any
 This implies that the transform cannot be bijective, and thus the matrix associated with it must be singular.
 
 $$
-\implies det(M - \lambda I_n) &= 0 \\
+\implies det(M - \lambda I_n) = 0 \\
 $$
 
 Thus, we are left with a polynomial in $\lambda$, of degree $n$ (the dimension of the transform) at most.
