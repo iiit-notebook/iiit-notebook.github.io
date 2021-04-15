@@ -138,7 +138,7 @@ a_1 \cdot f(x=y_1) + a_2 \cdot f(y_2) + .. + a_{n-r} \cdot f(y_{n-r}) = \bar \ph
 $$
 
 thus $a_1 \cdot y_1 + … + a_{n-r} \cdot y_{n-r} \in kerr(f)$
-since $\{x_1, x_2, … x_{r} \}$ is a bsasis of kernel, thus there must exist $d_1, d_2, … d_r$ such that 
+since $\{x_1, x_2, … x_{r} \}$ is a basis of kernel, thus there must exist $d_1, d_2, … d_r$ such that 
 
 $a_1 \cdot y_1 + … + a_{n-r} \cdot y_{n-r} = d_1 \cdot x_1 + d_2 \cdot x_2 + .. + d_r \cdot x_r$
 and thus 
