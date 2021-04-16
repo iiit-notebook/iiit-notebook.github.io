@@ -11,7 +11,7 @@ One-to-one (injective) and onto (surjective) linear transformations are defined 
 
 Formally, a mapping $T: V \to W$ is one-to-one if, for all $u, v \in V$,  
 $$u \neq v \implies T(u) \neq T(v),$$ or equivalently, $$T(u) = T(v) \implies u = v.$$  
-$T$ is onto if, for all $w \in W$, $\exists v \in V$ such that $T(v) = W.$  
+$T$ is onto if, for all $w \in W$, $\exists v \in V$ such that $T(v) = w.$  
 
 A linear mapping is called an isomorphism if it is one-to-one and onto, *i.e.* if it is a bijection.  
 Two vector spaces that have an isomorphism between them are called isomorphic; this is denoted by $V \cong W$.  
