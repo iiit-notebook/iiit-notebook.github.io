@@ -10,7 +10,7 @@ $v \neq 0$ is said to be an **eigenvector** of $M$ iff there exists $\lambda \ne
 $$M \cdot v = \lambda \cdot v$$
 and $\lambda$ is the eigenvalue of $v$.
 
-Also note, that if we have $w = \lambda \cdot v$ then 
+Also note, that if we have $w = \lambda \cdot v$ then  
 $$
 \begin{align}
 	M \cdot w &= (M \lambda) \cdot v \\
