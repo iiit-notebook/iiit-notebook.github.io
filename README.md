@@ -1,6 +1,6 @@
 # iiit-notebook
 
-iiit-notebook is a public repository of notes taken by students of IIIT Hyderabad. 
+iiit-notebook is a public repository of notes taken by students of IIIT Hyderabad.
 The website itself is completely static, generated using Jekyll.
 
 ## Features
@@ -10,7 +10,7 @@ The site has support for various features to improve note-taking such as
 
 + LaTeX embedded in `$...$` (inline) and `$$...$$` (display), using MathJax
 
-+ Syntax highlighting for code using Rouge, 
++ Syntax highlighting for code using Rouge,
 <pre>
 ```c
 	printf("Hello, world!\n");
@@ -101,7 +101,7 @@ Introductory course to computer programming.
 
 ## Downloading as PDF
 
-You can download the notes and convert them into convenient PDF's to read offline as well. 
+You can download the notes and convert them into convenient PDF's to read offline as well.
 You must have `pandoc` and `texlive-full` installed on your system for this to work.
 Use the pandoc mermaid filter if you wish to have the graphs rendered as well.
 
