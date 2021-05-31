@@ -2,7 +2,7 @@
 code: ma2.101
 name: Linear Algebra
 lecturer: Prof. Girish Varma, Prof. Indranil
-active: true
+active: false
 ---
 Introductory course on linear algebra.
 
