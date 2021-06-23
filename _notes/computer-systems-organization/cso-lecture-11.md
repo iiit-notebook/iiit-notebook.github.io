@@ -1,6 +1,6 @@
 ---
 title: CSO Lecture 11 notes
-date: 2021-05-19
+date: 2021-06-18
 author: Yash Mehan
 code: cs2.201
 number: 11
